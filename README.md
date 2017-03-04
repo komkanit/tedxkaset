@@ -13,7 +13,7 @@ MONGO_URI=
 
 ### Development
 - run command `node keystone` or `yarn start` to start project.
-TEDxKasetsartU website should open in http://localhost:3000.
+TEDxKasetsartU website should open in [http://localhost:3000](http://localhost:3000).
 
 ### Contribution
 Follow [git flow](https://danielkummer.github.io/git-flow-cheatsheet/).
