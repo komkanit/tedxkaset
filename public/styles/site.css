@@ -5833,12 +5833,55 @@ button.close {
   height: auto; }
 
 body {
-  color: #333; }
+  color: #333;
+  text-align: center; }
 
 .nav > li > a {
   text-transform: uppercase;
   font-weight: bold; }
 
+.navbar {
+  margin-bottom: 0; }
+
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
   color: #e62b1e;
   background-color: #f8f8f8; }
+
+.feature-img > img {
+  width: 100%; }
+
+.navbar-nav > li > a, .navbar-brand {
+  padding-top: 25px;
+  padding-bottom: 0;
+  height: 70px; }
+
+.navbar {
+  min-height: 70px; }
+
+.box {
+  float: left;
+  width: 400px;
+  height: 300px;
+  background-color: #e62b1e;
+  color: #fff;
+  padding: 15px; }
+
+.section {
+  padding: 30px 20px 30px 20px;
+  background-color: #444; }
+
+.about {
+  padding-top: 150px;
+  padding-bottom: 150px; }
+
+.social > div {
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+  margin: 10px; }
+
+.twitter {
+  background-color: skyblue; }
+
+.facebook {
+  background-color: blue; }
