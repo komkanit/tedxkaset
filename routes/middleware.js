@@ -9,7 +9,7 @@
  */
 var _ = require('lodash');
 var consts = require('../constants.js');
-const {getField} = require('../utils');
+const { getField } = require('../utils');
 
 
 /**

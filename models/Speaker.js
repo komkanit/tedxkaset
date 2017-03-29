@@ -1,6 +1,5 @@
 var keystone = require('keystone');
-const reduce = require('lodash/reduce');
-const {createLocaleField, combineFields} = require('../utils.js');
+const { createLocaleField, combineFields } = require('../utils.js');
 
 const locales = require('../constants').locales;
 const Types = keystone.Field.Types;
@@ -23,7 +22,7 @@ Speaker.add(combineFields([
 	{ name: { type: String } },
 	{ desc: { type: Types.Html, wysiwyg: true, height: 300 } },
 	{ image: { type: Types.CloudinaryImage } },
-	createLocaleField('about', {type: String}, locales),
+	createLocaleField('about', { type: String }, locales),
 ]));
 
 Speaker.register();
