@@ -5821,9 +5821,6 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
-#header {
-  margin-top: 30px; }
-
 #footer {
   margin-top: 30px;
   border-top: 1px solid #eeeeee;
@@ -5834,3 +5831,14 @@ button.close {
   display: block;
   max-width: 100%;
   height: auto; }
+
+body {
+  color: #333; }
+
+.nav > li > a {
+  text-transform: uppercase;
+  font-weight: bold; }
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  color: #e62b1e;
+  background-color: #f8f8f8; }
