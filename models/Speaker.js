@@ -1,4 +1,4 @@
-var keystone = require('keystone');
+var keystone = require("keystone");
 const Types = keystone.Field.Types;
 
 const Speaker = new keystone.List('Speaker', {
