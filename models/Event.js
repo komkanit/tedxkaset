@@ -14,9 +14,11 @@ const Event = new keystone.List('Event', {
 	},
 });
 
-Events.add({
+Event.add({
 	titel: { type: String, require: true },
 	name: { type: String },
 	desc: { type: Types.Html, wysiwyg: true, height: 300 },
 	image: { type: Types.CloudinaryImage },
 });
+
+Event.register();

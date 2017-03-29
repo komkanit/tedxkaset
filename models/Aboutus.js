@@ -1,5 +1,4 @@
 var keystone = require('keystone');
-const Types = keystone.Field.Types;
 
 const Aboutus = new keystone.List('Aboutus', {
 	map: {
@@ -12,3 +11,5 @@ const Aboutus = new keystone.List('Aboutus', {
 		unique: true,
 	},
 });
+
+Aboutus.register();
