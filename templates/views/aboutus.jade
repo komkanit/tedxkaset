@@ -1,0 +1,13 @@
+extends ../layouts/default
+
+block intro
+	.container
+		h1= 'About Us'
+
+block content
+	.container: .row
+		.col-md-9
+				a.col-md-6(href='/aboutus/#{aboutus.slug}' style='background-image:url("#{aboutus.image.url}");background-repeat: no-repeat; background-size: cover;')
+ 				h3 #{aboutus.title}
+ 				if aboutus.desc
+ 					!= aboutus.desc
