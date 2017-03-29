@@ -8,6 +8,7 @@
  * modules in your project's /lib directory.
  */
 var _ = require('lodash');
+var consts = require('../constants.js');
 
 
 /**
@@ -26,6 +27,8 @@ exports.initLocals = function (req, res, next) {
 		{ label: 'Contact', key: 'contact', href: '/contact' },
 	];
 	res.locals.user = req.user;
+	res.locals.locales = consts.locales;
+	res.locals.languageNames = consts.languageNames;
 	next();
 };
 
