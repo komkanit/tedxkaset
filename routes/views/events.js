@@ -8,5 +8,5 @@ exports = module.exports = function (req, res) {
 
 	view.query('events', keystone.list('Event').model.find());
 
-	view.render('speakers');
+	view.render('events');
 };

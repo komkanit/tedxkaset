@@ -5523,7 +5523,7 @@ underscore@^1.8.3:
   version "1.8.3"
   resolved "https://registry.yarnpkg.com/underscore/-/underscore-1.8.3.tgz#4f3fb53b106e6097fcf9cb4109f2a5e9bdfa5022"
 
-"unicode@>= 0.3.1":
+"unicode@>= 0.3.1", unicode@^0.6.1:
   version "0.6.1"
   resolved "https://registry.yarnpkg.com/unicode/-/unicode-0.6.1.tgz#ec69e3c4537e2b9650b826133bcb068f0445d0bc"
   dependencies:

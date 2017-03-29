@@ -6,9 +6,3 @@ block intro
 
 block content
 	.container: .row
-		.col-md-9
-			each event in events
-					a.col-md-6(href='/events/#{event.slug}' style='background-image:url("#{event.image.url}");background-repeat: no-repeat; background-size: cover;')
- 					h3 #{event.title}
- 					if event.desc
- 						!= event.desc
