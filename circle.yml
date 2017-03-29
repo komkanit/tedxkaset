@@ -12,6 +12,7 @@ dependencies:
 test:
   override:
     - npm test
+    - npm run lint
 
 deployment:
     staging:
