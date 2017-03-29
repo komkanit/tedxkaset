@@ -9,6 +9,7 @@
  */
 var _ = require('lodash');
 var consts = require('../constants.js');
+const {getField} = require('../utils');
 
 
 /**
@@ -29,6 +30,7 @@ exports.initLocals = function (req, res, next) {
 	res.locals.user = req.user;
 	res.locals.locales = consts.locales;
 	res.locals.languageNames = consts.languageNames;
+	res.locals.getField = getField;
 	next();
 };
 

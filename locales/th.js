@@ -12,5 +12,6 @@
 	"to use the Admin UI.": "to use the Admin UI.",
 	"Star KeystoneJS on GitHub": "Star KeystoneJS on GitHub",
 	"follow @keystonejs": "follow @keystonejs",
-	"Remember to {{{starKeystoneJS}}} and {{{follow}}} on twitter for updates.": "Remember to {{{starKeystoneJS}}} and {{{follow}}} on twitter for updates."
+	"Remember to {{{starKeystoneJS}}} and {{{follow}}} on twitter for updates.": "Remember to {{{starKeystoneJS}}} and {{{follow}}} on twitter for updates.",
+	"Open the Admin UI": "Open the Admin UI"
 }
