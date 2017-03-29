@@ -1,0 +1,21 @@
+machine:
+  node:
+    version: 6.0
+  environment:
+    CONTINUOUS_INTEGRATION: true
+
+dependencies:
+  cache_directories:
+    - node_modules
+  override:
+    - npm install
+test:
+  override:
+    - npm test
+    - npm run lint
+
+deployment:
+    staging:
+      branch: master
+      heroku:
+        appname: tedxkaset

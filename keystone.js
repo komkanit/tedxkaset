@@ -1,6 +1,9 @@
 // Simulate config options from your production environment by
 // customising the .env file in your project's root folder.
-require('dotenv').config();
+if (process.env.NODE_ENV !== 'production') {
+	// Require .env only when not in production -> won't crash on Heroku
+	require('dotenv').config();
+}
 
 // Require keystone
 var keystone = require('keystone');
