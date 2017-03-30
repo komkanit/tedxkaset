@@ -91,3 +91,20 @@ body {
 	text-decoration: none;
 	color: $black;
 }
+
+.page-menu {
+	border-bottom: 1px solid $black;
+}
+
+.page > div {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.page > div > h1 {
+	color: $red;
+}
+
+.page > div > p {
+	padding-left: 30px;
+}

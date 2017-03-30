@@ -5896,3 +5896,16 @@ body {
 .page-menu > a {
   text-decoration: none;
   color: #333; }
+
+.page-menu {
+  border-bottom: 1px solid #333; }
+
+.page > div {
+  margin-top: 50px;
+  margin-bottom: 50px; }
+
+.page > div > h1 {
+  color: #e62b1e; }
+
+.page > div > p {
+  padding-left: 30px; }
