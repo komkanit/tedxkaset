@@ -13,7 +13,6 @@
 
 body {
 	color: $black;
-	text-align: center;
 }
 
 .nav > li > a {
@@ -76,4 +75,19 @@ body {
 
 .facebook {
 	background-color: blue;
+}
+
+.page-menu > h1, a {
+	display: inline-block;
+	padding-right: 4%;
+}
+
+.page-menu > h1 {
+	color: $red;
+	font-weight: bold;
+}
+
+.page-menu > a {
+	text-decoration: none;
+	color: $black;
 }

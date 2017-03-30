@@ -1,8 +1,17 @@
 extends ../layouts/default
 
 block intro
-	.container
-		h1= 'Events'
+	.container.page-menu
+		h1 EVENT
+		a(href='#whatistedx'): h2 What is TEDx
+		a(href='#info'): h2 Info
+		a(href='#speaker'): h2 Speaker
 
 block content
-	.container: .row
+	.container
+		#whatistedx
+			p 1
+		#info
+			p 2
+		#speaker
+			p 3

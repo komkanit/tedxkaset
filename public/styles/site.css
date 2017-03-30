@@ -5833,8 +5833,7 @@ button.close {
   height: auto; }
 
 body {
-  color: #333;
-  text-align: center; }
+  color: #333; }
 
 .nav > li > a {
   text-transform: uppercase;
@@ -5885,3 +5884,15 @@ body {
 
 .facebook {
   background-color: blue; }
+
+.page-menu > h1, a {
+  display: inline-block;
+  padding-right: 4%; }
+
+.page-menu > h1 {
+  color: #e62b1e;
+  font-weight: bold; }
+
+.page-menu > a {
+  text-decoration: none;
+  color: #333; }
