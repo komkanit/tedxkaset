@@ -62,6 +62,9 @@ html
 							else
 								li: a(href='/keystone/signin') Sign In
 
+		.feature-img
+			img(src='http://fakeimg.pl/1500x400/?text=feature-img')
+
 		//- BODY
 		#body
 
@@ -84,7 +87,9 @@ html
 		.container: #footer
 
 			//- You don't _have_ to include a link saying your site is powered by KeystoneJS, but we appreciate it!
-			p Powered by <a href="http://keystonejs.com" target="_blank">KeystoneJS</a>.
+			.container.social
+				.img-circle.facebook
+				.img-circle.twitter
 
 
 		//- JAVASCRIPT
