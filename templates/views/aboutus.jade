@@ -1,8 +1,15 @@
 extends ../layouts/default
-
 block intro
-	.container
-		h1= 'About Us'
+	- var data = [{slug:"team",header:"Team"}, {slug:"faq",header:"FAQ"}, {slug:"contactus",header:"Contact Us"}]
+	.container.page-menu
+		h1 ABOUT US
+		for x in data
+			a(href='#'+ x.slug): h2= x.header
 
 block content
-	.container: .row
+	- var data = [{slug:"team",header:"Team",content:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque pharetra gravida nunc, ut tristique tellus porttitor sit amet. Vestibulum mattis pretium posuere. Nulla ac ligula at nisi aliquet tincidunt. Nunc tincidunt commodo diam a luctus. Nam a magna eleifend enim fermentum accumsan. Proin orci ante, porta sed rutrum id, lobortis a velit. Aliquam eget lectus quis tellus tincidunt laoreet.<br><br>Sed ornare est ut interdum pellentesque. Donec turpis lacus, efficitur eu lorem id, fermentum ornare dui. Morbi ullamcorper, turpis vulputate placerat viverra, lectus enim vehicula nisl, a euismod massa leo eget erat. Phasellus nec dui id mi convallis vulputate. Etiam dapibus eget ipsum sed fermentum. Nullam quis tempus ex, id euismod dolor. Integer eget sem vel turpis gravida placerat id sed lectus. Vestibulum sagittis gravida molestie. Sed at semper elit. Nunc id euismod enim, sed consequat sapien. Curabitur placerat lobortis ipsum, a dictum dui molestie sed. Vivamus gravida dui in sapien viverra, ut facilisis augue tincidunt. Nullam non rutrum ante. Sed sagittis justo nec dui scelerisque fringilla. Etiam eu ornare diam, eu egestas leo. Vestibulum dictum purus mollis risus congue fermentum."}, {slug:"faq",header:"FAQ",content:"info"}, {slug:"contactus",header:"Contact Us",content:"Contact Us"}]
+	.container.page
+		for x in data
+			div(id=x.slug)
+				h1= x.header
+				p!= x.content
