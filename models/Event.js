@@ -15,7 +15,7 @@ const Event = new keystone.List('Event', {
 });
 
 Event.add({
-	titel: { type: String, require: true },
+	title: { type: String, require: true },
 	name: { type: String },
 	desc: { type: Types.Html, wysiwyg: true, height: 300 },
 	image: { type: Types.CloudinaryImage },
