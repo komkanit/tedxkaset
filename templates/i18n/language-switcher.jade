@@ -1,0 +1,5 @@
+div.language-switcher
+	each locale in locales
+		button.language-switcher__language(onclick="document.cookie = 'tedxkaset-lang=#{locale}'; location.reload();")
+			| #{languageNames[locale]}
+		

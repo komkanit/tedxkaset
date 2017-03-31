@@ -9,6 +9,7 @@ block content
 		.col-md-9
 			each speaker in speakers
 				a.col-md-6(href='/speakers/#{speaker.slug}' style='background-image:url("#{speaker.image.url}");background-repeat: no-repeat; background-size: cover;')
-					h3 #{speaker.title}
+					h3 #{getField(speaker, 'title')}
 					if speaker.desc
 						!= speaker.desc
+					p #{getField(speaker, 'about', locale)}

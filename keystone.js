@@ -7,6 +7,8 @@ if (process.env.NODE_ENV !== 'production') {
 
 // Require keystone
 var keystone = require('keystone');
+var consts = require('./constants.js');
+var i18n = require('i18n');
 
 // Initialise Keystone with your project's configuration.
 // See http://keystonejs.com/guide/config for available options
@@ -41,6 +43,16 @@ keystone.set('locals', {
 	env: keystone.get('env'),
 	utils: keystone.utils,
 	editable: keystone.content.editable,
+});
+
+i18n.configure({
+	locales: consts.locales,
+	directory: __dirname + '/locales',
+	autoReload: true,
+	syncFiles: true,
+	objectNotation: true,
+	defaultLocale: 'th',
+	cookie: consts.localeCookie,
 });
 
 // Load your project's Routes
