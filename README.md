@@ -79,10 +79,10 @@ Speaker.register();
 ##### Templates
 
 ```pug
-h3 #{locals.getField(speaker, 'title', locale)}
+h3 #{getField(speaker, 'title', locale)}
 if speaker.desc
 	!= speaker.desc
-p #{locals.getField(speaker, 'about', locale)}
+p #{getField(speaker, 'about', locale)}
 ```
 
 ### Contribution
