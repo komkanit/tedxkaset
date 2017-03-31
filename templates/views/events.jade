@@ -1,29 +1,15 @@
 extends ../layouts/default
-
 block intro
+	- var data = [{slug:"whatistedx",header:"What is TEDx"}, {slug:"info",header:"Info"}, {slug:"speaker",header:"Speaker"}]
 	.container.page-menu
 		h1 EVENT
-		a(href='#whatistedx'): h2 What is TEDx
-		a(href='#info'): h2 Info
-		a(href='#speaker'): h2 Speaker
+		for x in data
+			a(href='#'+ x.slug): h2= x.header
 
 block content
+	- var data = [{slug:"whatistedx",header:"What is TEDx",content:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque pharetra gravida nunc, ut tristique tellus porttitor sit amet. Vestibulum mattis pretium posuere. Nulla ac ligula at nisi aliquet tincidunt. Nunc tincidunt commodo diam a luctus. Nam a magna eleifend enim fermentum accumsan. Proin orci ante, porta sed rutrum id, lobortis a velit. Aliquam eget lectus quis tellus tincidunt laoreet.<br><br>Sed ornare est ut interdum pellentesque. Donec turpis lacus, efficitur eu lorem id, fermentum ornare dui. Morbi ullamcorper, turpis vulputate placerat viverra, lectus enim vehicula nisl, a euismod massa leo eget erat. Phasellus nec dui id mi convallis vulputate. Etiam dapibus eget ipsum sed fermentum. Nullam quis tempus ex, id euismod dolor. Integer eget sem vel turpis gravida placerat id sed lectus. Vestibulum sagittis gravida molestie. Sed at semper elit. Nunc id euismod enim, sed consequat sapien. Curabitur placerat lobortis ipsum, a dictum dui molestie sed. Vivamus gravida dui in sapien viverra, ut facilisis augue tincidunt. Nullam non rutrum ante. Sed sagittis justo nec dui scelerisque fringilla. Etiam eu ornare diam, eu egestas leo. Vestibulum dictum purus mollis risus congue fermentum."}, {slug:"info",header:"Info",content:"info"}, {slug:"speaker",header:"Speaker",content:"speaker"}]
 	.container.page
-		#whatistedx
-			h1 What is TEDx
-			p
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque et quam vel nunc hendrerit imperdiet. Suspendisse sit amet elementum sem. Vivamus nec ex mauris. Duis orci lectus, convallis sed erat eu, venenatis congue libero. Nullam eu maximus risus. Sed pellentesque fringilla faucibus. Ut pharetra velit laoreet risus efficitur porta. Mauris dignissim mattis eleifend. Nunc molestie id risus eget tempor.
-			p
-				Integer vehicula erat id faucibus porta. Fusce dignissim orci at maximus rutrum. Donec auctor, nisl sed sagittis semper, tortor tellus imperdiet ligula, vel condimentum ipsum mi nec sem. Duis ultricies tellus nec massa iaculis fringilla. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus molestie luctus tortor, non faucibus tortor ornare vitae. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam consequat dui ac posuere tristique. Duis gravida neque metus, sit amet sollicitudin lacus ornare ut. Proin ullamcorper tincidunt diam nec mattis. Pellentesque in iaculis mi. Vestibulum mi tortor, faucibus vitae purus nec, accumsan laoreet diam. Sed vel dolor eget quam aliquam sagittis.		
-		#info
-			h1 Info
-			p
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque et quam vel nunc hendrerit imperdiet. Suspendisse sit amet elementum sem. Vivamus nec ex mauris. Duis orci lectus, convallis sed erat eu, venenatis congue libero. Nullam eu maximus risus. Sed pellentesque fringilla faucibus. Ut pharetra velit laoreet risus efficitur porta. Mauris dignissim mattis eleifend. Nunc molestie id risus eget tempor.
-			p
-				Integer vehicula erat id faucibus porta. Fusce dignissim orci at maximus rutrum. Donec auctor, nisl sed sagittis semper, tortor tellus imperdiet ligula, vel condimentum ipsum mi nec sem. Duis ultricies tellus nec massa iaculis fringilla. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus molestie luctus tortor, non faucibus tortor ornare vitae. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam consequat dui ac posuere tristique. Duis gravida neque metus, sit amet sollicitudin lacus ornare ut. Proin ullamcorper tincidunt diam nec mattis. Pellentesque in iaculis mi. Vestibulum mi tortor, faucibus vitae purus nec, accumsan laoreet diam. Sed vel dolor eget quam aliquam sagittis.		#info
-		#speaker
-			h1 Speaker
-			p
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque et quam vel nunc hendrerit imperdiet. Suspendisse sit amet elementum sem. Vivamus nec ex mauris. Duis orci lectus, convallis sed erat eu, venenatis congue libero. Nullam eu maximus risus. Sed pellentesque fringilla faucibus. Ut pharetra velit laoreet risus efficitur porta. Mauris dignissim mattis eleifend. Nunc molestie id risus eget tempor.
-			p
-				Integer vehicula erat id faucibus porta. Fusce dignissim orci at maximus rutrum. Donec auctor, nisl sed sagittis semper, tortor tellus imperdiet ligula, vel condimentum ipsum mi nec sem. Duis ultricies tellus nec massa iaculis fringilla. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus molestie luctus tortor, non faucibus tortor ornare vitae. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam consequat dui ac posuere tristique. Duis gravida neque metus, sit amet sollicitudin lacus ornare ut. Proin ullamcorper tincidunt diam nec mattis. Pellentesque in iaculis mi. Vestibulum mi tortor, faucibus vitae purus nec, accumsan laoreet diam. Sed vel dolor eget quam aliquam sagittis.		
+		for x in data
+			div(id=x.slug)
+				h1= x.header
+				p!= x.content
