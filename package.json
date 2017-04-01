@@ -22,7 +22,7 @@
   "scripts": {
     "lint": "eslint .",
     "start": "node keystone.js",
-    "dev": "NODE_ENV=development node keystone.js",
+    "dev": "NODE_ENV=development MONGO_URI=localhost:27017 node keystone.js",
     "test": "npm run lint",
     "prepush": "npm run test"
   }
