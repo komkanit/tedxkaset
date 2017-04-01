@@ -3,23 +3,23 @@ extends ../layouts/default
 block content
 	.container: .jumbotron
 		img(src='/images/logo.svg', width='160')
-		h1 
-			| #{__('index.greeting')} 
+		h1
+			| #{__('index.greeting')}
 		p
-			| !{__('index.new_website', {keystoneLink: '<a href="http://keystonejs.com" target="_blank">KeystoneJS</a>'})} 
-		p 
-			| !{__('index.libraries', {bootstrapLink: "<a href='http://getbootstrap.com/' target='_blank'>Bootstrap</a>", jQueryLink: "<a href='http://www.jquery.com/' target='_blank'>jQuery</a>"})} 
-			
-		p 
-			| !{__('index.keystone_guide', {keystoneGuideLink: "<a href='http://keystonejs.com/guide' target='_blank'>Getting Started</a>"})} 
+			| !{__('index.new_website', {keystoneLink: '<a href="http://keystonejs.com" target="_blank">KeystoneJS</a>'})}
+		p
+			| !{__('index.libraries', {bootstrapLink: "<a href='http://getbootstrap.com/' target='_blank'>Bootstrap</a>", jQueryLink: "<a href='http://www.jquery.com/' target='_blank'>jQuery</a>"})}
+
+		p
+			| !{__('index.keystone_guide', {keystoneGuideLink: "<a href='http://keystonejs.com/guide' target='_blank'>Getting Started</a>"})}
 		hr
 		if user && user.canAccessKeystone
 			p
-				a(href='/keystone').btn.btn-lg.btn-primary #{__('index.open_admin_ui')} 
+				a(href='/keystone').btn.btn-lg.btn-primary #{__('index.open_admin_ui')}
 		else
-			p !{__('index.admin_credentials', {email: "<strong>tedxku@keystonejs.com</strong>", password: "<strong>1q2w3e4r</strong>"})} 
+			p !{__('index.admin_credentials', {email: "<strong>tedxku@keystonejs.com</strong>", password: "<strong>1q2w3e4r</strong>"})}
 			p
-				a(href='/keystone/signin', style='margin-right: 10px').btn.btn-lg.btn-primary #{__('index.sign_in')} 
-				|  #{__('index.use_admin_ui')}'to use the Admin UI.'
+				a(href='/keystone/signin', style='margin-right: 10px').btn.btn-lg.btn-primary #{__('index.sign_in')}
+				|  #{__('index.use_admin_ui')}
 		hr
-		p !{__('index.star_and_follow', {starKeystoneJS: "<a href='https://github.com/keystonejs/keystone' target='_blank'>" + __('index.star') + "</a>", follow: "<a href='https://twitter.com/keystonejs' target='_blank'>" + __('index.follow') + "</a>"})} 
+		p !{__('index.star_and_follow', {starKeystoneJS: "<a href='https://github.com/keystonejs/keystone' target='_blank'>" + __('index.star') + "</a>", follow: "<a href='https://twitter.com/keystonejs' target='_blank'>" + __('index.follow') + "</a>"})}

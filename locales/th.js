@@ -9,7 +9,10 @@
 		},
 		"greeting": "index.greeting",
 		"star": "index.star",
-		"follow": "index.follow"
+		"follow": "index.follow",
+		"admin_credentials": "index.admin_credentials",
+		"sign_in": "index.sign_in",
+		"use_admin_ui": "index.use_admin_ui"
 	},
 	"Star KeystoneJS on GitHub": "Star KeystoneJS on GitHub",
 	"follow @keystonejs": "follow @keystonejs"
