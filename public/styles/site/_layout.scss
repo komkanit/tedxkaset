@@ -150,3 +150,16 @@ div.speaker-info > div.social {
 	margin-top: 50px;
 	text-align: center;
 }
+
+@media (max-width: 991px) {
+	div.row > div {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+	div.speaker-img {
+		text-align: center;
+	}
+	div.speaker-info {
+		text-align: center;
+	}
+}
