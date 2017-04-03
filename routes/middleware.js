@@ -8,6 +8,8 @@
  * modules in your project's /lib directory.
  */
 var _ = require('lodash');
+var consts = require('../constants.js');
+const { getField } = require('../utils');
 
 
 /**
@@ -20,7 +22,7 @@ var _ = require('lodash');
 exports.initLocals = function (req, res, next) {
 	res.locals.navLinks = [
 	//	{ label: 'Home', key: 'home', href: '/' },
-		{ label: 'EVENTS', key: 'event', href: '/events' },
+		{ label: 'EVENTS', key: 'events', href: '/events' },
 		{ label: 'NEWS', key: 'news', href: '/news' },
 		{ label: 'ABOUT US', key: 'aboutus', href: '/aboutus' },
 		{ label: 'BLOG', key: 'blog', href: '/blog' },
@@ -29,6 +31,9 @@ exports.initLocals = function (req, res, next) {
 //		{ label: 'Contact', key: 'contact', href: '/contact' },
 	];
 	res.locals.user = req.user;
+	res.locals.locales = consts.locales;
+	res.locals.languageNames = consts.languageNames;
+	res.locals.getField = getField;
 	next();
 };
 
