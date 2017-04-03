@@ -8,6 +8,8 @@
  * modules in your project's /lib directory.
  */
 var _ = require('lodash');
+var consts = require('../constants.js');
+const { getField } = require('../utils');
 
 
 /**
@@ -19,15 +21,19 @@ var _ = require('lodash');
 */
 exports.initLocals = function (req, res, next) {
 	res.locals.navLinks = [
-		{ label: 'Home', key: 'home', href: '/' },
-		{ label: 'Blog', key: 'blog', href: '/blog' },
-		{ label: 'Gallery', key: 'gallery', href: '/gallery' },
-		{ label: 'Events', key: 'event', href: '/events' },
-		{ label: 'Aboutus', key: 'aboutus', href: '/aboutus' },
-		{ label: 'Speakers', key: 'speakers', href: '/speakers' },
-		{ label: 'Contact', key: 'contact', href: '/contact' },
+	//	{ label: 'Home', key: 'home', href: '/' },
+		{ label: 'EVENTS', key: 'events', href: '/events' },
+		{ label: 'NEWS', key: 'news', href: '/news' },
+		{ label: 'ABOUT US', key: 'aboutus', href: '/aboutus' },
+		{ label: 'BLOG', key: 'blog', href: '/blog' },
+		{ label: 'PARTNERS', key: 'partner', href: '/partner' },
+//		{ label: 'Speakers', key: 'speakers', href: '/speakers' },
+//		{ label: 'Contact', key: 'contact', href: '/contact' },
 	];
 	res.locals.user = req.user;
+	res.locals.locales = consts.locales;
+	res.locals.languageNames = consts.languageNames;
+	res.locals.getField = getField;
 	next();
 };
 

@@ -1,23 +1,12 @@
 extends ../layouts/default
 
 block content
-	.container: .jumbotron
-		img(src='/images/logo.svg', width='160')
-		h1 Welcome
-		p This is your new <a href='http://keystonejs.com' target='_blank'>KeystoneJS</a> website.
-		p It includes the latest versions of
-			| <a href='http://getbootstrap.com/' target='_blank'>Bootstrap</a>
-			| and <a href='http://www.jquery.com/' target='_blank'>jQuery</a>.
-		p Visit the <a href='http://keystonejs.com/guide' target='_blank'>Getting Started</a> guide to learn how to customise it.
-		hr
-		if user && user.canAccessKeystone
-			p
-				a(href='/keystone').btn.btn-lg.btn-primary Open the Admin UI
-		else
-			p We have created a default Admin user for you with the email <strong>tedxku@keystonejs.com</strong> and the password <strong>1q2w3e4r</strong>.
-			p
-				a(href='/keystone/signin', style='margin-right: 10px').btn.btn-lg.btn-primary Sign in
-				|  to use the Admin UI.
-		hr
-		p Remember to <a href='https://github.com/keystonejs/keystone' target='_blank'>Star KeystoneJS on GitHub</a> and
-			| <a href='https://twitter.com/keystonejs' target='_blank'>follow @keystonejs</a> on twitter for updates.
+	.container.about
+		h1.about-tedx About TEDx
+		p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer auctor dolor id gravida ultrices. Donec vulputate mollis volutpat. Quisque scelerisque ex ut diam viverra, non auctor neque iaculis. Cras lacinia, elit vitae pellentesque semper, libero tortor blandit dolor, et placerat lectus diam vitae mauris. Integer dictum velit vel blandit varius. Phasellus in semper libero. Suspendisse ornare in nisi ac ultrices. Nulla sodales porttitor turpis et lacinia. Sed bibendum sodales felis non placerat. Morbi sed nisi ut est tempus faucibus nec at metus. Curabitur vitae justo vitae augue vestibulum sagittis. Donec est felis, gravida ac interdum ac, sollicitudin vitae est. Aliquam euismod at justo quis molestie. Ut tristique ligula a justo faucibus, at feugiat nisi tristique.
+	.container-fluid.section
+		.box
+			h2 TEDxKasetsartU - 7th of May
+			h3.
+				Take a Chance<br>	
+				Make a Change

@@ -36,12 +36,12 @@ html
 	body
 
 		//- HEADER
-		#header: .container
+		#header: .container-fullwidth
 
 			//- Customise your site's navigation by changing the navLinks Array in ./routes/middleware.js
 			//- ... or completely change this header to suit your design.
 
-			div(role="navigation").navbar.navbar-default
+			div(role="navigation").navbar.navbar-default.navbar-static-top
 				.container-fluid
 					.navbar-header
 						button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
@@ -49,7 +49,8 @@ html
 							span.icon-bar
 							span.icon-bar
 							span.icon-bar
-						a.navbar-brand(href='/') tedxkasetsart
+						a.navbar-brand(href='/')
+							img(src='../images/TEDxKasetsartU_logo.png')
 					.collapse.navbar-collapse
 						ul.nav.navbar-nav.navbar-left
 							each link in navLinks
@@ -62,8 +63,12 @@ html
 							else
 								li: a(href='/keystone/signin') Sign In
 
+		.feature-img
+			img(src='http://fakeimg.pl/1500x400/?text=feature-img')
+
 		//- BODY
 		#body
+			include ../i18n/language-switcher
 
 			//- NOTE:
 			//- There is no .container wrapping class around body blocks to allow more flexibility in design.
@@ -81,11 +86,17 @@ html
 
 
 		//- FOOTER
-		.container: #footer
+		#footer
 
 			//- You don't _have_ to include a link saying your site is powered by KeystoneJS, but we appreciate it!
-			p Powered by <a href="http://keystonejs.com" target="_blank">KeystoneJS</a>.
-
+			.social
+				a.img-circle.facebook
+					img(src="/images/Facebook.png")
+				a.img-circle.twitter
+					img(src="/images/Twitter.png")
+				a.img-circle.in
+					img(src="/images/Linkedin.png")
+			.blackline
 
 		//- JAVASCRIPT
 
