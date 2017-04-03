@@ -5909,3 +5909,15 @@ body {
 
 .page > div > p {
   padding-left: 30px; }
+
+div.speakers {
+  margin-top: 50px; }
+
+div.speakers h2 {
+  color: #e62b1e; }
+
+img.speakers {
+  display: inline-block; }
+
+div.row > div {
+  height: 320px; }
