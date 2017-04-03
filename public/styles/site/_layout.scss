@@ -1,8 +1,17 @@
 #footer {
-	margin-top: 30px;
 	border-top: 1px solid #eeeeee;
-	padding-top: 30px;
-	color: #777777;
+	padding-top: 25px;
+	background-color: #e62b1e;
+	height: auto;
+	width: 100%;
+	text-align: center;
+}
+
+.blackline{
+	margin-top: 25px;
+	width: 100%;
+	height: 30px;
+	background-color: #000;
 }
 
 .gallery-image img{
@@ -20,8 +29,9 @@ body {
     font-weight: bold;
 }
 
-.navbar {
-	margin-bottom: 0;
+.navbar-left {
+		margin-top: 20px;
+		margin-left: 5%;
 }
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
@@ -37,10 +47,17 @@ body {
     padding-top:25px;
     padding-bottom:0;
     height: 70px;
+		margin-right: 35px;
 }
 
+.navbar-brand img{
+	width: auto;
+	height: 70px;
+}
 .navbar {
 	min-height:70px;
+	margin-bottom: 0;
+	height: 100px;
 }
 
 .box {
@@ -67,14 +84,13 @@ body {
 	height: 100px;
 	width: 100px;
 	margin: 10px;
+	margin-bottom: 25px;
+	text-align: center;
 }
 
-.twitter {
-	background-color:skyblue;
-}
-
-.facebook {
-	background-color: blue;
+.img-circle > img{
+	height: 95px;
+	width: auto;
 }
 
 .page-menu > h1, a {
@@ -109,6 +125,11 @@ body {
 	padding-left: 30px;
 }
 
+//////////
+.about-tedx{
+	text-align: center;
+}
+
 div.speakers {
 	margin-top: 50px;
 }
@@ -123,4 +144,9 @@ img.speakers {
 
 div.row > div {
 	height: 320px;
+}
+
+div.speaker-info > div.social {
+	margin-top: 50px;
+	text-align: center;
 }

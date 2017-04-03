@@ -49,7 +49,8 @@ html
 							span.icon-bar
 							span.icon-bar
 							span.icon-bar
-						a.navbar-brand(href='/') tedxkasetsart
+						a.navbar-brand(href='/')
+							img(src='../images/TEDxKasetsartU_logo.png')
 					.collapse.navbar-collapse
 						ul.nav.navbar-nav.navbar-left
 							each link in navLinks
@@ -84,13 +85,17 @@ html
 
 
 		//- FOOTER
-		.container: #footer
+		#footer
 
 			//- You don't _have_ to include a link saying your site is powered by KeystoneJS, but we appreciate it!
-			.container.social
-				.img-circle.facebook
-				.img-circle.twitter
-
+			.social
+				a.img-circle.facebook
+					img(src="/images/Facebook.png")
+				a.img-circle.twitter
+					img(src="/images/Twitter.png")
+				a.img-circle.in
+					img(src="/images/Linkedin.png")
+			.blackline
 
 		//- JAVASCRIPT
 
