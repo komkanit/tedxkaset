@@ -6,6 +6,7 @@ exports = module.exports = function (req, res) {
 
 	locals.section = 'events';
 
+
 	view.query('events', keystone.list('Event').model.find());
 
 	view.render('events');
