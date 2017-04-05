@@ -27,6 +27,7 @@ body {
 .nav > li > a {
     text-transform: uppercase;
     font-weight: bold;
+    font-size: 1.2em;
 }
 
 .navbar-left {
@@ -39,6 +40,10 @@ body {
 	background-color: $navbar-default-bg;
 }
 
+.navbar-default {
+	background-color: $navbar-default-bg;
+}
+
 .feature-img > img{
 	width: 100%;
 }
@@ -47,7 +52,7 @@ body {
     padding-top:25px;
     padding-bottom:0;
     height: 70px;
-		margin-right: 35px;
+	margin-right: 35px;
 }
 
 .navbar-brand img{
@@ -112,22 +117,22 @@ body {
 	width: auto;
 }
 
-.page-menu > h1, a {
-	display: inline-block;
-	padding-right: 4%;
-}
-
 .page-menu > h1 {
+	flex-grow: 1;
 	color: $red;
 	font-weight: bold;
 }
 
 .page-menu > a {
+	flex-grow: 1;
 	text-decoration: none;
 	color: $black;
 }
 
 .page-menu {
+	display: flex;
+	align-items: flex-end;
+	margin-top: 10px;
 	border-bottom: 1px solid $black;
 }
 
@@ -196,4 +201,22 @@ div.speaker-info > div.social {
 	div.speaker-info {
 		text-align: center;
 	}
+}
+
+.language-switcher__language, .language-switcher__language:hover{
+	text-decoration: none;
+	color: $black;
+	display: inline;
+	margin-left: 5px;
+}
+
+.language-switcher__language:hover {
+	cursor: pointer;
+}
+
+.language-switcher {
+	position: absolute;
+	top: 20px;
+	right: 50px;
+	z-index: 9999;
 }

@@ -55,7 +55,17 @@ html
 						ul.nav.navbar-nav.navbar-left
 							each link in navLinks
 								li(class=(section == link.key ? 'active' : null)): a(href=link.href)= link.label
+//<<<<<<< HEAD
 					
+//=======
+						//- ul.nav.navbar-nav.navbar-right
+						//- 	if user
+						//- 		if user.canAccessKeystone
+						//- 			li: a(href='/keystone') Open Keystone
+						//- 		li: a(href='/keystone/signout') Sign Out
+						//- 	else
+						//- 		li: a(href='/keystone/signin') Sign In
+//>>>>>>> 1834b6d2f2bb0adb523a42b4598e0316d11ae7dc
 		.feature-img
 			img(src='http://fakeimg.pl/1500x400/?text=feature-img')
 
