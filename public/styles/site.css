@@ -5870,7 +5870,7 @@ body {
 
 .navbar-brand img {
   width: auto;
-  height: 70px; }
+  height: 100%; }
 
 .navbar {
   min-height: 70px;
@@ -5905,19 +5905,19 @@ body {
   height: 95px;
   width: auto; }
 
-.page-menu > h1, a {
-  display: inline-block;
-  padding-right: 4%; }
-
 .page-menu > h1 {
+  flex-grow: 1;
   color: #E62B1E;
   font-weight: bold; }
 
 .page-menu > a {
+  flex-grow: 1;
   text-decoration: none;
   color: #333; }
 
 .page-menu {
+  display: flex;
+  align-items: flex-end;
   border-bottom: 1px solid #333; }
 
 .page > div {

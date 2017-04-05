@@ -57,7 +57,7 @@ body {
 
 .navbar-brand img{
 	width: auto;
-	height: 70px;
+	height: 100%;
 }
 .navbar {
 	min-height:70px;
@@ -98,22 +98,21 @@ body {
 	width: auto;
 }
 
-.page-menu > h1, a {
-	display: inline-block;
-	padding-right: 4%;
-}
-
 .page-menu > h1 {
+	flex-grow: 1;
 	color: $red;
 	font-weight: bold;
 }
 
 .page-menu > a {
+	flex-grow: 1;
 	text-decoration: none;
 	color: $black;
 }
 
 .page-menu {
+	display: flex;
+	align-items: flex-end;
 	border-bottom: 1px solid $black;
 }
 
