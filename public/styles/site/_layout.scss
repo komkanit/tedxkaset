@@ -1,16 +1,13 @@
 #footer {
-	border-top: 1px solid #eeeeee;
-	padding-top: 25px;
-	background-color: #e62b1e;
+	background-color: $red;
 	height: auto;
 	width: 100%;
 	text-align: center;
 }
 
 .blackline{
-	margin-top: 25px;
 	width: 100%;
-	height: 30px;
+	height: 45px;
 	background-color: #000;
 }
 
@@ -22,6 +19,14 @@
 
 body {
 	color: $black;
+}
+
+.content {
+	background: $white;
+    background: -webkit-linear-gradient($white, $grey-bg);
+    background: -o-linear-gradient($white, $grey-bg);
+    background: -moz-linear-gradient($white, $grey-bg);
+    background: linear-gradient($white, $grey-bg);
 }
 
 .nav > li > a {
@@ -69,9 +74,10 @@ body {
 	float: left;
 	width: 400px;
 	height: 300px;
-	background-color: $red;
-	color: #fff;
+	background-color: $light-grey;
+	color: $black;
 	padding: 15px;
+	text-align: center;
 }
 
 .section {
@@ -84,17 +90,16 @@ body {
 	padding-bottom: 150px;
 }
 
-.social > div {
+.social > a {
 	display: inline-block;
 	height: 100px;
 	width: 100px;
 	margin: 10px;
-	margin-bottom: 25px;
 	text-align: center;
 }
 
 .img-circle > img{
-	height: 95px;
+	height: 100%;
 	width: auto;
 }
 
@@ -169,6 +174,7 @@ div.speaker-info > div.social {
 	}
 }
 
+/*language switcher*/
 .language-switcher__language, .language-switcher__language:hover{
 	text-decoration: none;
 	color: $black;
