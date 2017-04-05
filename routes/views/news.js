@@ -7,8 +7,8 @@ exports = module.exports = function (req, res) {
 	var locals = res.locals;
 
 	// Init locals
-	locals.section = 'blog';
-	req.params.category = 'blog';
+	locals.section = 'news';
+	req.params.category = 'news';
 	locals.filters = {
 		category: req.params.category,
 	};
@@ -80,5 +80,5 @@ exports = module.exports = function (req, res) {
 	});
 
 	// Render the view
-	view.render('blog');
+	view.render('news');
 };
