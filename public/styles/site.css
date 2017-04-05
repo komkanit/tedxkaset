@@ -5822,12 +5822,8 @@ button.close {
     display: none !important; } }
 
 #footer {
-<<<<<<< HEAD
   padding-top: 25px;
   background-color: #e62b1e;
-=======
-  background-color: #E62B1E;
->>>>>>> d22b416465824e3bae69285e450a587dd52d8f63
   height: auto;
   width: 100%;
   text-align: center; }
@@ -5888,7 +5884,6 @@ body {
 
 .box {
   float: left;
-<<<<<<< HEAD
   width: 450px;
   height: 400px;
   background-color: #edeae1;
@@ -5908,15 +5903,10 @@ body {
   border: none;
   color: #fff;
   font-size: 130%;
-  text-decoration: none; }
-=======
+  text-decoration: none;
   width: 400px;
   height: 300px;
-  background-color: #CCC;
-  color: #333;
-  padding: 15px;
   text-align: center; }
->>>>>>> d22b416465824e3bae69285e450a587dd52d8f63
 
 .section {
   padding: 30px 20px 30px 20px;
