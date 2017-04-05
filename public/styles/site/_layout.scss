@@ -27,6 +27,7 @@ body {
 .nav > li > a {
     text-transform: uppercase;
     font-weight: bold;
+    font-size: 1.2em;
 }
 
 .navbar-left {
@@ -36,6 +37,10 @@ body {
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
 	color: $red;
+	background-color: $navbar-default-bg;
+}
+
+.navbar-default {
 	background-color: $navbar-default-bg;
 }
 
