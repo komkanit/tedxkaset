@@ -5822,16 +5822,19 @@ button.close {
     display: none !important; } }
 
 #footer {
+<<<<<<< HEAD
   padding-top: 25px;
   background-color: #e62b1e;
+=======
+  background-color: #E62B1E;
+>>>>>>> d22b416465824e3bae69285e450a587dd52d8f63
   height: auto;
   width: 100%;
   text-align: center; }
 
 .blackline {
-  margin-top: 25px;
   width: 100%;
-  height: 30px;
+  height: 45px;
   background-color: #000; }
 
 .gallery-image img {
@@ -5841,6 +5844,13 @@ button.close {
 
 body {
   color: #333; }
+
+.content {
+  background: #FFF;
+  background: -webkit-linear-gradient(#FFF, #BBB);
+  background: -o-linear-gradient(#FFF, #BBB);
+  background: -moz-linear-gradient(#FFF, #BBB);
+  background: linear-gradient(#FFF, #BBB); }
 
 .nav > li > a {
   text-transform: uppercase;
@@ -5878,6 +5888,7 @@ body {
 
 .box {
   float: left;
+<<<<<<< HEAD
   width: 450px;
   height: 400px;
   background-color: #edeae1;
@@ -5898,6 +5909,14 @@ body {
   color: #fff;
   font-size: 130%;
   text-decoration: none; }
+=======
+  width: 400px;
+  height: 300px;
+  background-color: #CCC;
+  color: #333;
+  padding: 15px;
+  text-align: center; }
+>>>>>>> d22b416465824e3bae69285e450a587dd52d8f63
 
 .section {
   padding: 30px 20px 30px 20px;
@@ -5908,16 +5927,15 @@ body {
   padding-top: 150px;
   padding-bottom: 150px; }
 
-.social > div {
+.social > a {
   display: inline-block;
   height: 100px;
   width: 100px;
   margin: 10px;
-  margin-bottom: 25px;
   text-align: center; }
 
 .img-circle > img {
-  height: 95px;
+  height: 100%;
   width: auto; }
 
 .page-menu > h1 {
@@ -5985,6 +6003,7 @@ div.speaker-info > div.social {
   div.speaker-info {
     text-align: center; } }
 
+/*language switcher*/
 .language-switcher__language, .language-switcher__language:hover {
   text-decoration: none;
   color: #333;
