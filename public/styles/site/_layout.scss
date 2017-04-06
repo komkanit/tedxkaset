@@ -218,12 +218,8 @@ div.speaker-info > div.social {
 	}
 
 }
-@media (max-width: 680px) {
-	.container.page-menu{
-		display: none;
-	}
 
-}
+
 /*language switcher*/
 .language-switcher__language, .language-switcher__language:hover{
 	text-decoration: none;
@@ -243,8 +239,8 @@ div.speaker-info > div.social {
 	z-index: 9999;
 }
 
-@media (max-width: 770px) {
-	.language-switcher {
-		right: 70px;
+@media (max-width: 767px) {
+	.container-fluid .navbar-collapse .language-switcher {
+		display: none;
 	}
 }

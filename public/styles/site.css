@@ -5997,10 +5997,6 @@ div.speaker-info > div.social {
   div.speaker-info {
     text-align: center; } }
 
-@media (max-width: 680px) {
-  .container.page-menu {
-    display: none; } }
-
 /*language switcher*/
 .language-switcher__language, .language-switcher__language:hover {
   text-decoration: none;
@@ -6017,9 +6013,64 @@ div.speaker-info > div.social {
   right: 50px;
   z-index: 9999; }
 
-@media (max-width: 770px) {
-  .language-switcher {
-    right: 70px; } }
+@media (max-width: 767px) {
+  .container-fluid .navbar-collapse .language-switcher {
+    display: none; } }
 
-.language-switcher__language.active {
-  font-weight: bold; }
+.language-switcher__language, .language-switcher__language:hover {
+  text-decoration: none;
+  color: #333;
+  display: inline;
+  margin-left: 5px;
+  cursor: pointer; }
+  .language-switcher__language.active, .language-switcher__language:hover.active {
+    font-weight: bold; }
+
+.navbar-collapse ul.nav li a, .navbar-collapse ul.nav li.active a, .navbar-collapse ul.nav li a:hover, .navbar-collapse ul.nav li.active a:hover {
+  background-color: transparent;
+  pointer-events: all; }
+
+@media (max-width: 767px) {
+  .navbar-collapse ul.nav {
+    margin-left: 55%;
+    box-shadow: 0px 2px #ddd;
+    background: white;
+    margin-top: 0; }
+    .navbar-collapse ul.nav li {
+      pointer-events: none; } }
+
+.navbar-collapse .language-switcher {
+  text-align: right;
+  display: block;
+  position: absolute;
+  right: 18px;
+  margin-left: 55%; }
+
+@media (max-width: 767px) {
+  .navbar-brand {
+    max-width: 70%;
+    height: 100px;
+    margin-right: 0; }
+    .navbar-brand img {
+      max-height: 100%;
+      max-width: 100%;
+      height: auto;
+      width: auto; }
+  .navbar-toggle {
+    margin-top: 25px; } }
+
+@media (max-width: 767px) {
+  .page-menu > a {
+    display: none; } }
+
+#speakers .speakers.row {
+  height: auto; }
+  #speakers .speakers.row div[class^=col] {
+    height: auto; }
+    #speakers .speakers.row div[class^=col] h3 {
+      color: #E62B1E;
+      text-align: left; }
+    #speakers .speakers.row div[class^=col] .img-circle {
+      height: 32px; }
+    #speakers .speakers.row div[class^=col] .description, #speakers .speakers.row div[class^=col] .social {
+      text-align: left; }
