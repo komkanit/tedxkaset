@@ -41,8 +41,12 @@
 		},
 		"question": [
 			{
-				"ask": "ask",
-				"ans": "ans"
+				"ask": "What is TED ?",
+				"ans": "TED is a nonprofit devoted to spreading ideas, usually in the form of short, powerful talks. TED began in 1984 as a conference where Technology, Entertainment and Design converged."
+			},
+			{
+				"ask": "What are the differences between TED and TEDx?",
+				"ans": "TED events are organized directly by TED Conferences LLC, New York, United States. TEDx was created in the spirit of TED's mission, \"ideas worth spreading\" and organized by the local community under license and guideline."
 			}
 		]
 	}
