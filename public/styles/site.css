@@ -6041,3 +6041,15 @@ div.speaker-info > div.social {
 @media (max-width: 767px) {
   .page-menu > a {
     display: none; } }
+
+#speakers .speakers.row {
+  height: auto; }
+  #speakers .speakers.row div[class^=col] {
+    height: auto; }
+    #speakers .speakers.row div[class^=col] h3 {
+      color: #E62B1E;
+      text-align: left; }
+    #speakers .speakers.row div[class^=col] .img-circle {
+      height: 32px; }
+    #speakers .speakers.row div[class^=col] .description, #speakers .speakers.row div[class^=col] .social {
+      text-align: left; }
