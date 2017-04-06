@@ -194,6 +194,17 @@ div.speaker-info > div.social {
 }
 
 @media (max-width: 1038px) {
+div.ab-position {
+	text-align: center;
+}
+
+div.ab-position-each {
+	display: inline-block;
+	margin-right: 20px;
+	text-align: center;
+}
+
+@media (max-width: 1100px) {
 	.navbar-left {
 			margin-left: 8%;
 			text-align: center;

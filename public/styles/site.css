@@ -6013,9 +6013,10 @@ div.speaker-info > div.social {
   right: 50px;
   z-index: 9999; }
 
-@media (max-width: 767px) {
-  .container-fluid .navbar-collapse .language-switcher {
-    display: none; } }
+@media (max-width: 770px) {
+  .language-switcher {
+    right: 70px; }
+  }
 
 .language-switcher__language, .language-switcher__language:hover {
   text-decoration: none;
@@ -6043,7 +6044,7 @@ div.speaker-info > div.social {
   text-align: right;
   display: block;
   position: absolute;
-  right: 18px;
+  /*right: 18px;*/
   margin-left: 55%; }
 
 @media (max-width: 767px) {
