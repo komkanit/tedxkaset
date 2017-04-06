@@ -1,0 +1,37 @@
+extends ../layouts/default
+block intro
+	- var data = [{slug:"whatistedx",header:"What is TEDx"}, {slug:"eventinfo",header:"Event info"}, {slug:"speakers",header:"Speakers"}]
+	.container.page-menu
+		h1 EVENT
+		for x in data
+			a(href='#'+ x.slug): h2= x.header
+
+block content
+	- var data = [{slug:"whatistedx",header:__('event.what_is_tedx.header'),content:__('event.what_is_tedx.content')}, {slug:"eventinfo",header:"Event info",content:"info"}, {slug:"speakers",header: __('event.speakers'),content:""}]
+	.container.page
+		for x in data
+			div(id=x.slug)
+				h3= x.header
+				p!= x.content
+				if(x.slug === "speakers")
+					for speaker in speakers
+						div.row.speakers
+							div.col-xs-4.col-lg-3.speaker-img
+								if getField(speaker, 'image.url')
+									img.speakers(src="#{getField(speaker, 'image.url')}")
+								else
+									img.speakers(src="/images/unknown-speaker.jpg" alt="#{getField(speaker, 'name', locale)}")
+							div.col-xs-6.col-lg-5.speaker-info
+								h3.speaker-name= getField(speaker, 'name', locale)
+								.description!= getField(speaker, 'description', locale)
+								div.social
+									- var social = {facebook: getField(speaker, 'facebook_url', locale), twitter: getField(speaker, 'twitter_url', locale), linkedIn: getField(speaker, 'linkedIn_url', locale)}
+									if social.facebook
+										a.img-circle.facebook(href="#{social.facebook}")
+											img(src="/images/Facebook.png")
+									if social.twitter
+										a.img-circle.twitter(href="#{social.twitter}")
+											img(src="/images/Twitter.png")
+									if social.linkedIn
+										a.img-circle.in(href="#{social.linkedIn}")
+											img(src="/images/Linkedin.png")
