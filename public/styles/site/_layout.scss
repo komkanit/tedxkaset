@@ -22,8 +22,7 @@
 body {
 	color: $black;
 }
-p {
-}
+
 .content {
 	background: $white;
     background: -webkit-linear-gradient($white, $grey-bg);
@@ -93,10 +92,10 @@ p {
 	line-height: 125%;
 	margin-bottom: 20px;
 }
-.faq h4 {
+.faq > h4 {
 	margin-bottom:10px;
 	margin-top: 25px;
-	text-emphasis-style: bold;
+	font-weight: bold;
 }
 
 .box a{

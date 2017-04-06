@@ -17,7 +17,7 @@
 			"speakers": {
 				"slug": "speakers",
 				"header": "Speakers",
-				"content": "TEDxKasetsartU 2017 ปิดรับสมัคร Speaker แล้วค่ะ"
+				"content": ""
 			}
 		}
 	},
@@ -36,7 +36,7 @@
 			"contact_us": {
 				"slug": "contact_us",
 				"header": "Contact Us",
-				"content": "ติดต่อพวกเราได้ที่<br>Facebook : https://www.facebook.com/TEDxKasetsartU/่<br>Twitter : https://twitter.com/TEDxKasetsartU่<br>Email : tedxkasetsartu@gmail.com"
+				"content": "ติดต่อพวกเราได้ที่<br>Facebook : <a href=\"https://www.facebook.com/TEDxKasetsartU\">https://www.facebook.com/TEDxKasetsartU</a><br>Twitter : <a href=\"https://twitter.com/TEDxKasetsartU\">https://twitter.com/TEDxKasetsartU</a><br>Email : tedxkasetsartu@gmail.com"
 			}
 		},
 		"question": [
