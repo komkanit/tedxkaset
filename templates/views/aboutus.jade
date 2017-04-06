@@ -9,10 +9,17 @@ block intro
 block content
 	- var data = __('aboutus.content')
 	- var questions = __('aboutus.question')
+	- var positiondata = [{pic:"http://fakeimg.pl/180x260/", name:"name"},{pic:"http://fakeimg.pl/180x260/", name:"name"},{pic:"http://fakeimg.pl/180x260/", name:"name"},{pic:"http://fakeimg.pl/180x260/", name:"name"},{pic:"http://fakeimg.pl/180x260/", name:"name"}]
 	.container.page
 		for x in data
 			div(id=x.slug)
 				h1= x.header
+				if(x.header == "Team")
+					div.ab-position
+						for x in positiondata
+							div.ab-position-each
+								img(src=x.pic)
+								p= x.name
 				p!= x.content
 				if(x.slug === "faq")
 					for question in questions

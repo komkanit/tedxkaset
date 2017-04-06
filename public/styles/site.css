@@ -5976,6 +5976,14 @@ div.speaker-info > div.social {
   margin-top: 50px;
   text-align: center; }
 
+div.ab-position {
+  text-align: center; }
+
+div.ab-position-each {
+  display: inline-block;
+  margin-right: 20px;
+  text-align: center; }
+
 @media (max-width: 1100px) {
   .navbar-left {
     margin-left: 0; } }
