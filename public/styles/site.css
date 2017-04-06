@@ -5822,8 +5822,7 @@ button.close {
     display: none !important; } }
 
 #footer {
-  padding-top: 25px;
-  background-color: #e62b1e;
+  background-color: #E62B1E;
   height: auto;
   width: 100%;
   text-align: center; }
