@@ -6006,18 +6006,34 @@ div.speaker-info > div.social {
     font-weight: bold; }
 
 .navbar-collapse ul.nav li a, .navbar-collapse ul.nav li.active a, .navbar-collapse ul.nav li a:hover, .navbar-collapse ul.nav li.active a:hover {
-  background-color: transparent; }
+  background-color: transparent;
+  pointer-events: all; }
 
 @media (max-width: 767px) {
   .navbar-collapse ul.nav {
     margin-left: 55%;
     box-shadow: 0px 2px #ddd;
-    background: white; } }
+    background: white;
+    margin-top: 0; }
+    .navbar-collapse ul.nav li {
+      pointer-events: none; } }
 
 .navbar-collapse .language-switcher {
   text-align: right;
   display: block;
   position: absolute;
   right: 18px;
-  margin-top: 18px;
   margin-left: 55%; }
+
+@media (max-width: 767px) {
+  .navbar-brand {
+    max-width: 70%;
+    height: 100px;
+    margin-right: 0; }
+    .navbar-brand img {
+      max-height: 100%;
+      max-width: 100%;
+      height: auto;
+      width: auto; }
+  .navbar-toggle {
+    margin-top: 25px; } }
