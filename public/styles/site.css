@@ -5980,6 +5980,14 @@ div.speaker-info > div.social {
   text-align: center; }
 
 @media (max-width: 1038px) {
+  div.ab-position {
+    text-align: center; }
+  div.ab-position-each {
+    display: inline-block;
+    margin-right: 20px;
+    text-align: center; } }
+
+@media (max-width: 1100px) {
   .navbar-left {
     margin-left: 8%;
     text-align: center; } }
@@ -6013,10 +6021,9 @@ div.speaker-info > div.social {
   right: 50px;
   z-index: 9999; }
 
-@media (max-width: 770px) {
-  .language-switcher {
-    right: 70px; }
-  }
+@media (max-width: 767px) {
+  .container-fluid .navbar-collapse .language-switcher {
+    display: none; } }
 
 .language-switcher__language, .language-switcher__language:hover {
   text-decoration: none;
@@ -6044,7 +6051,7 @@ div.speaker-info > div.social {
   text-align: right;
   display: block;
   position: absolute;
-  /*right: 18px;*/
+  right: 18px;
   margin-left: 55%; }
 
 @media (max-width: 767px) {
