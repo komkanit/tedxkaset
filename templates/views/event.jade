@@ -20,7 +20,7 @@ block content
 								if getField(speaker, 'image.url')
 									img.speakers(src="#{getField(speaker, 'image.url')}")
 								else
-									p="No image"
+									img.speakers(src="/images/unknown-speaker.jpg" alt="#{getField(speaker, 'name', locale)}")
 							div.col-md-6.col-lg-5.speaker-info
 								h2.speaker-name= getField(speaker, 'name', locale)
 								div!= getField(speaker, 'description', locale)
