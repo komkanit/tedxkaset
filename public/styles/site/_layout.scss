@@ -165,6 +165,11 @@ body {
 
 div.speakers {
 	margin-top: 50px;
+
+	.speaker-img img {
+		max-height: 100%;
+		max-width: 100%;
+	}
 }
 
 div.speakers h2 {

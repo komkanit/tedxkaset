@@ -15,5 +15,12 @@
 		"use_admin_ui": "index.use_admin_ui"
 	},
 	"Star KeystoneJS on GitHub": "Star KeystoneJS on GitHub",
-	"follow @keystonejs": "follow @keystonejs"
+	"follow @keystonejs": "follow @keystonejs",
+	"event": {
+		"speakers": "event.speakers",
+		"what_is_tedx": {
+			"header": "event.what_is_tedx.header",
+			"content": "event.what_is_tedx.content"
+		}
+	}
 }
