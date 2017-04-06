@@ -7,27 +7,31 @@ block intro
 			a(href='#'+ x.slug): h2= x.header
 
 block content
-	- var data = [{slug:"whatistedx",header:"What is TEDx",content:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque pharetra gravida nunc, ut tristique tellus porttitor sit amet. Vestibulum mattis pretium posuere. Nulla ac ligula at nisi aliquet tincidunt. Nunc tincidunt commodo diam a luctus. Nam a magna eleifend enim fermentum accumsan. Proin orci ante, porta sed rutrum id, lobortis a velit. Aliquam eget lectus quis tellus tincidunt laoreet.<br><br>Sed ornare est ut interdum pellentesque. Donec turpis lacus, efficitur eu lorem id, fermentum ornare dui. Morbi ullamcorper, turpis vulputate placerat viverra, lectus enim vehicula nisl, a euismod massa leo eget erat. Phasellus nec dui id mi convallis vulputate. Etiam dapibus eget ipsum sed fermentum. Nullam quis tempus ex, id euismod dolor. Integer eget sem vel turpis gravida placerat id sed lectus. Vestibulum sagittis gravida molestie. Sed at semper elit. Nunc id euismod enim, sed consequat sapien. Curabitur placerat lobortis ipsum, a dictum dui molestie sed. Vivamus gravida dui in sapien viverra, ut facilisis augue tincidunt. Nullam non rutrum ante. Sed sagittis justo nec dui scelerisque fringilla. Etiam eu ornare diam, eu egestas leo. Vestibulum dictum purus mollis risus congue fermentum."}, {slug:"eventinfo",header:"Event info",content:"info"}, {slug:"speakers",header:"Speakers",content:"speakers"}]
-	- var speakers = [{name : "speaker1", img : "http://fakeimg.pl/240x320/", description : "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam nibh. Nunc varius facilisis eros. Sed erat. In in velit quis arcu ornare laoreet. Curabitur adipiscing luctus massa. Integer ut purus ac augue commodo commodo. Nunc nec mi eu justo.", twitter : "http://www.twitter.com", facebook : "http://www.facebook.com", linkedin : "http://www.linkedin.com"}, {name : "speaker2", img : "http://fakeimg.pl/240x320/", description : "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam nibh. Nunc varius facilisis eros. Sed erat. In in velit quis arcu ornare laoreet. Curabitur adipiscing luctus massa. Integer ut purus ac augue commodo commodo. Nunc nec mi eu justo.", twitter : "http://www.twitter.com", facebook : "http://www.facebook.com", linkedin : "http://www.linkedin.com"}, {name : "speaker3", img : "http://fakeimg.pl/240x320/", description : "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam nibh. Nunc varius facilisis eros. Sed erat. In in velit quis arcu ornare laoreet. Curabitur adipiscing luctus massa. Integer ut purus ac augue commodo commodo. Nunc nec mi eu justo.", twitter : "http://www.twitter.com", facebook : "http://www.facebook.com", linkedin : "http://www.linkedin.com"}]
+	- var data = [{slug:"whatistedx",header:__('event.what_is_tedx.header'),content:__('event.what_is_tedx.content')}, {slug:"eventinfo",header:"Event info",content:"info"}, {slug:"speakers",header: __('event.speakers'),content:""}]
 	.container.page
 		for x in data
 			div(id=x.slug)
-				h1= x.header
+				h3= x.header
 				p!= x.content
-				if(x.slug === "speakers") 
-					for speaker in speakers 
+				if(x.slug === "speakers")
+					for speaker in speakers
 						div.row.speakers
 							div.col-md-4.col-lg-3.speaker-img
-								img.speakers(src= speaker.img)
+								if getField(speaker, 'image.url')
+									img.speakers(src="#{getField(speaker, 'image.url')}")
+								else
+									p="No image"
 							div.col-md-6.col-lg-5.speaker-info
-								h2.speaker-name= speaker.name
-								p= speaker.description
+								h2.speaker-name= getField(speaker, 'name', locale)
+								div!= getField(speaker, 'description', locale)
 								div.social
-									a.img-circle.facebook
-										img(src="/images/Facebook.png")
-									a.img-circle.twitter
-										img(src="/images/Twitter.png")
-									a.img-circle.in
-										img(src="/images/Linkedin.png")
-					
-				
+									- var social = {facebook: getField(speaker, 'facebook_url', locale), twitter: getField(speaker, 'twitter_url', locale), linkedIn: getField(speaker, 'linkedIn_url', locale)}
+									if social.facebook
+										a.img-circle.facebook(href="#{social.facebook}")
+											img(src="/images/Facebook.png")
+									if social.twitter
+										a.img-circle.twitter(href="#{social.twitter}")
+											img(src="/images/Twitter.png")
+									if social.linkedIn
+										a.img-circle.in(href="#{social.linkedIn}")
+											img(src="/images/Linkedin.png")
