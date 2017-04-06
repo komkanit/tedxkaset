@@ -6011,3 +6011,6 @@ div.speaker-info > div.social {
   top: 20px;
   right: 50px;
   z-index: 9999; }
+
+.language-switcher__language.active {
+  font-weight: bold; }
