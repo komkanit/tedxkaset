@@ -28,10 +28,10 @@
 				"header": "Team",
 				"content": "aboutus.team.content"
 			},
-			"info": {
-				"slug": "info",
-				"header": "Info",
-				"content": "aboutus.info.content"
+			"faq": {
+				"slug": "faq",
+				"header": "FAQ",
+				"content": ""
 			},
 			"contact_us": {
 				"slug": "contact_us",
