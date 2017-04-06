@@ -50,25 +50,25 @@ html
 							span.icon-bar
 							span.icon-bar
 						a.navbar-brand(href='/')
-							img(src='../images/TEDxKasetsartU_logo.png')
+							img(src='/images/TEDxKasetsartU_logo.png')
 					.collapse.navbar-collapse
+						include ../i18n/language-switcher
 						ul.nav.navbar-nav.navbar-left
 							each link in navLinks
 								li(class=(section == link.key ? 'active' : null)): a(href=link.href)= link.label
-						ul.nav.navbar-nav.navbar-right
-							if user
-								if user.canAccessKeystone
-									li: a(href='/keystone') Open Keystone
-								li: a(href='/keystone/signout') Sign Out
-							else
-								li: a(href='/keystone/signin') Sign In
 
+						//- ul.nav.navbar-nav.navbar-right
+						//- 	if user
+						//- 		if user.canAccessKeystone
+						//- 			li: a(href='/keystone') Open Keystone
+						//- 		li: a(href='/keystone/signout') Sign Out
+						//- 	else
+						//- 		li: a(href='/keystone/signin') Sign In
 		.feature-img
 			img(src='http://fakeimg.pl/1500x400/?text=feature-img')
 
 		//- BODY
 		#body
-			include ../i18n/language-switcher
 
 			//- NOTE:
 			//- There is no .container wrapping class around body blocks to allow more flexibility in design.
@@ -82,7 +82,8 @@ html
 			+flash-messages(messages)
 
 			//- The content block should contain the body of your template's content
-			block content
+			.container-fullwidth.content
+				block content
 
 
 		//- FOOTER
@@ -90,11 +91,11 @@ html
 
 			//- You don't _have_ to include a link saying your site is powered by KeystoneJS, but we appreciate it!
 			.social
-				a.img-circle.facebook
+				a.img-circle.facebook(href="https://web.facebook.com/TEDxKasetsartU/" target="_blank")
 					img(src="/images/Facebook.png")
-				a.img-circle.twitter
+				a.img-circle.twitter(href="https://twitter.com/TEDxKasetsartU" target="_blank")
 					img(src="/images/Twitter.png")
-				a.img-circle.in
+				a.img-circle.in(href="https://www.linkedin.com/company/tedxkasetsartu" target="_blank")
 					img(src="/images/Linkedin.png")
 			.blackline
 

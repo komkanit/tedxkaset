@@ -1,0 +1,13 @@
+.language-switcher {
+	&__language, &__language:hover {
+		text-decoration: none;
+		color: $black;
+		display: inline;
+		margin-left: 5px;
+		cursor: pointer;
+
+		&.active {
+			font-weight: bold;
+		}
+	}
+}

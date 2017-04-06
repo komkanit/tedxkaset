@@ -22,7 +22,7 @@ const { getField } = require('../utils');
 exports.initLocals = function (req, res, next) {
 	res.locals.navLinks = [
 	//	{ label: 'Home', key: 'home', href: '/' },
-		{ label: 'EVENTS', key: 'events', href: '/events' },
+		{ label: 'EVENT', key: 'event', href: '/event' },
 		{ label: 'NEWS', key: 'news', href: '/news' },
 		{ label: 'ABOUT US', key: 'aboutus', href: '/aboutus' },
 		{ label: 'BLOG', key: 'blog', href: '/blog' },

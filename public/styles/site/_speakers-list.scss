@@ -1,0 +1,22 @@
+#speakers {
+	.speakers.row {
+    height: auto;
+
+		div[class^=col] {
+      height: auto;
+
+			h3 {
+				color: $red;
+				text-align: left;
+			}
+
+			.img-circle {
+				height: 32px;
+			}
+
+			.description, .social {
+				text-align: left;
+			}
+    }
+  }
+}

@@ -1,5 +1,5 @@
 #footer {
-	border-top: 1px solid #eeeeee;
+	//border-top: 1px solid #eeeeee;
 	padding-top: 25px;
 	background-color: #e62b1e;
 	height: auto;
@@ -8,9 +8,8 @@
 }
 
 .blackline{
-	margin-top: 25px;
 	width: 100%;
-	height: 30px;
+	height: 45px;
 	background-color: #000;
 }
 
@@ -24,18 +23,31 @@ body {
 	color: $black;
 }
 
+.content {
+	background: $white;
+    background: -webkit-linear-gradient($white, $grey-bg);
+    background: -o-linear-gradient($white, $grey-bg);
+    background: -moz-linear-gradient($white, $grey-bg);
+    background: linear-gradient($white, $grey-bg);
+}
+
 .nav > li > a {
     text-transform: uppercase;
     font-weight: bold;
+    font-size: 1.2em;
 }
 
 .navbar-left {
 		margin-top: 20px;
-		margin-left: 5%;
+		margin-left: 10%;
 }
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
 	color: $red;
+	background-color: $navbar-default-bg;
+}
+
+.navbar-default {
 	background-color: $navbar-default-bg;
 }
 
@@ -47,7 +59,7 @@ body {
     padding-top:25px;
     padding-bottom:0;
     height: 70px;
-		margin-right: 35px;
+	margin-right: 35px;
 }
 
 .navbar-brand img{
@@ -60,18 +72,40 @@ body {
 	height: 100px;
 }
 
+
 .box {
 	float: left;
+	width: 450px;
+	height: 400px;
+	background-color: #edeae1;
+	color: #535352;
+	padding: 15px;
+	padding-top: 3%;
+	text-align: center;
+}
+
+.box h2,h3{
+	line-height: 150%;
+}
+
+.box a{
+	background-color: #e62b1e;
+	margin-top: 5px;
+	padding: 10px 25px;
+	border-radius: 10%;
+	border: none;
+	color: #fff;
+	font-size: 130%;
+	text-decoration: none;
 	width: 400px;
 	height: 300px;
-	background-color: $red;
-	color: #fff;
-	padding: 15px;
+	text-align: center;
 }
 
 .section {
 	padding: 30px 20px 30px 20px;
 	background-color: #444;
+	text-align: center;
 }
 
 .about {
@@ -79,36 +113,35 @@ body {
 	padding-bottom: 150px;
 }
 
-.social > div {
+.social > a {
 	display: inline-block;
 	height: 100px;
 	width: 100px;
 	margin: 10px;
-	margin-bottom: 25px;
 	text-align: center;
 }
 
 .img-circle > img{
-	height: 95px;
+	height: 100%;
 	width: auto;
 }
 
-.page-menu > h1, a {
-	display: inline-block;
-	padding-right: 4%;
-}
-
 .page-menu > h1 {
+	flex-grow: 1;
 	color: $red;
 	font-weight: bold;
 }
 
 .page-menu > a {
+	flex-grow: 1;
 	text-decoration: none;
 	color: $black;
 }
 
 .page-menu {
+	display: flex;
+	align-items: flex-end;
+	margin-top: 10px;
 	border-bottom: 1px solid $black;
 }
 
@@ -156,7 +189,22 @@ div.speaker-info > div.social {
 	text-align: center;
 }
 
+@media (max-width: 1100px) {
+	.navbar-left {
+			margin-left: 0;
+	}
+}
+
 @media (max-width: 991px) {
+	.navbar-left {
+			text-align: center;
+			margin-left: 15%;
+	}
+	.box{
+		float:none;
+		display: block;
+		margin : 0 auto;
+	}
 	div.row > div {
 		padding-left: 30px;
 		padding-right: 30px;

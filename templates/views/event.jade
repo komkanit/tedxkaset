@@ -16,14 +16,14 @@ block content
 				if(x.slug === "speakers")
 					for speaker in speakers
 						div.row.speakers
-							div.col-md-4.col-lg-3.speaker-img
+							div.col-xs-4.col-lg-3.speaker-img
 								if getField(speaker, 'image.url')
 									img.speakers(src="#{getField(speaker, 'image.url')}")
 								else
-									p="No image"
-							div.col-md-6.col-lg-5.speaker-info
-								h2.speaker-name= getField(speaker, 'name', locale)
-								div!= getField(speaker, 'description', locale)
+									img.speakers(src="/images/unknown-speaker.jpg" alt="#{getField(speaker, 'name', locale)}")
+							div.col-xs-6.col-lg-5.speaker-info
+								h3.speaker-name= getField(speaker, 'name', locale)
+								.description!= getField(speaker, 'description', locale)
 								div.social
 									- var social = {facebook: getField(speaker, 'facebook_url', locale), twitter: getField(speaker, 'twitter_url', locale), linkedIn: getField(speaker, 'linkedIn_url', locale)}
 									if social.facebook
