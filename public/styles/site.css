@@ -6037,3 +6037,7 @@ div.speaker-info > div.social {
       width: auto; }
   .navbar-toggle {
     margin-top: 25px; } }
+
+@media (max-width: 767px) {
+  .page-menu > a {
+    display: none; } }
