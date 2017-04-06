@@ -17,7 +17,7 @@
 			"speakers": {
 				"slug": "speakers",
 				"header": "Speakers",
-				"content": "TEDxKasetsartU 2017 ปิดรับสมัคร Speaker แล้วค่ะ"
+				"content": ""
 			}
 		}
 	},
@@ -36,7 +36,7 @@
 			"contact_us": {
 				"slug": "contact_us",
 				"header": "Contact Us",
-				"content": "ติดต่อพวกเราได้ที่<br>Facebook : https://www.facebook.com/TEDxKasetsartU/่<br>Twitter : https://twitter.com/TEDxKasetsartU่<br>Email : tedxkasetsartu@gmail.com"
+				"content": "ติดต่อพวกเราได้ที่<br>Facebook : <a href=\"https://www.facebook.com/TEDxKasetsartU\">https://www.facebook.com/TEDxKasetsartU</a><br>Twitter : <a href=\"https://twitter.com/TEDxKasetsartU\">https://twitter.com/TEDxKasetsartU</a><br>Email : tedxkasetsartu@gmail.com"
 			}
 		},
 		"question": [
@@ -65,5 +65,6 @@
 				"ans": "บัตรเข้าชม TEDxKasetsartU มีทั้งหมด 3 ประเภท<br><br>Donor Ticket ราคา 1,000 บาท (เริ่มเปิดขายในรอบ Pre-Sale วันที่ 7 เมษายน) สำหรับผู้ที่ต้องการสนับสนุนงาน TEDxKasetsartU และกลัวว่าจะซื้อบัตรในวันขายจริงในวันที่ 14 เมษายนไม่ทัน สามารถซื้อได้เลยโดยไม่จำเป็นต้องผ่านการคัดเลือก<br>บุคคลทั่วไป (เริ่มเปิดขายวันที่ 14 เมษายน) ราคา 500 บาท<br>นักเรียน-นิสิต-นักศึกษา (เริ่มเปิดขายวันที่ 14 เมษายน) ราคา 300 บาท"
 			}
 		]
-	}
+	},
+	"Read More": "Read More"
 }

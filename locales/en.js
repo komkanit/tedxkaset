@@ -36,7 +36,7 @@
 			"contact_us": {
 				"slug": "contact_us",
 				"header": "Contact Us",
-				"content": "Facebook : https://www.facebook.com/TEDxKasetsartU/<br>Twitter : https://twitter.com/TEDxKasetsartU<br>Email : tedxkasetsartu@gmail.com<br>"
+				"content": "Facebook : <a href=\"https://www.facebook.com/TEDxKasetsartU\">https://www.facebook.com/TEDxKasetsartU</a><br>Twitter : <a href=\"https://twitter.com/TEDxKasetsartU\">https://twitter.com/TEDxKasetsartU</a><br>Email : tedxkasetsartu@gmail.com<br>"
 			}
 		},
 		"question": [
