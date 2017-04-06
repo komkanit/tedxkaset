@@ -1,28 +1,29 @@
 var keystone = require('keystone');
 const { createLocaleField, combineFields } = require('../utils.js');
+const { locales } = require('../constants.js');
 
-const locales = require('../constants').locales;
 const Types = keystone.Field.Types;
 
 const Speaker = new keystone.List('Speaker', {
 	map: {
-		name: 'title',
+		name: 'name',
 	},
 	singular: 'Speaker',
 	plural: 'Speakers',
 	autokey: {
 		path: 'slug',
-		from: 'title',
+		from: 'name',
 		unique: true,
 	},
 });
 
 Speaker.add(combineFields([
-	{ title: { type: String, required: true } },
-	{ name: { type: String } },
-	{ desc: { type: Types.Html, wysiwyg: true, height: 300 } },
+	{ name: { type: String, required: true, initial: true } },
+	createLocaleField('description', { type: Types.Html, wysiwyg: true, height: 300 }, locales),
 	{ image: { type: Types.CloudinaryImage } },
-	createLocaleField('about', { type: String }, locales),
+	{ facebook_url: { type: Types.Url } },
+	{ twitter_url: { type: Types.Url } },
+	{ linkedIn_url: { type: Types.Url } },
 ]));
 
 Speaker.register();

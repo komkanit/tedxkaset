@@ -5931,6 +5931,9 @@ body {
 
 div.speakers {
   margin-top: 50px; }
+  div.speakers .speaker-img img {
+    max-height: 100%;
+    max-width: 100%; }
 
 div.speakers h2 {
   color: #e62b1e; }
