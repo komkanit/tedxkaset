@@ -49,5 +49,7 @@
 				"ans": "TED events are organized directly by TED Conferences LLC, New York, United States. TEDx was created in the spirit of TED's mission, \"ideas worth spreading\" and organized by the local community under license and guideline."
 			}
 		]
-	}
+	},
+	"read more": "read more",
+	"Read More": "Read More"
 }
