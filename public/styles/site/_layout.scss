@@ -63,7 +63,7 @@ body {
     padding-top:25px;
     padding-bottom:0;
     height: 70px;
-	margin-right: 35px;
+	margin-right: 70px;
 }
 
 .navbar-brand img{
@@ -89,7 +89,7 @@ body {
 }
 
 .box h2,h3{
-	line-height: 150%;
+	line-height: 125%;
 	margin-bottom: 20px;
 }
 .faq h4 {
@@ -99,15 +99,14 @@ body {
 }
 
 .box a{
+	display: inline-block;
+	margin-top:15px;
 	background-color: #e62b1e;
 	padding: 10px 25px;
-	border-radius: 10%;
 	border: none;
 	color: #fff;
 	font-size: 130%;
 	text-decoration: none;
-	width: 400px;
-	height: 300px;
 	text-align: center;
 }
 
