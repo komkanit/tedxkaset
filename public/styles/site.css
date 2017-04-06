@@ -5996,21 +5996,28 @@ div.speaker-info > div.social {
   div.speaker-info {
     text-align: center; } }
 
-/*language switcher*/
 .language-switcher__language, .language-switcher__language:hover {
   text-decoration: none;
   color: #333;
   display: inline;
-  margin-left: 5px; }
-
-.language-switcher__language:hover {
+  margin-left: 5px;
   cursor: pointer; }
+  .language-switcher__language.active, .language-switcher__language:hover.active {
+    font-weight: bold; }
 
-.language-switcher {
+.navbar-collapse ul.nav li a, .navbar-collapse ul.nav li.active a, .navbar-collapse ul.nav li a:hover, .navbar-collapse ul.nav li.active a:hover {
+  background-color: transparent; }
+
+@media (max-width: 767px) {
+  .navbar-collapse ul.nav {
+    margin-left: 55%;
+    box-shadow: 0px 2px #ddd;
+    background: white; } }
+
+.navbar-collapse .language-switcher {
+  text-align: right;
+  display: block;
   position: absolute;
-  top: 20px;
-  right: 50px;
-  z-index: 9999; }
-
-.language-switcher__language.active {
-  font-weight: bold; }
+  right: 18px;
+  margin-top: 18px;
+  margin-left: 55%; }

@@ -216,22 +216,3 @@ div.speaker-info > div.social {
 		text-align: center;
 	}
 }
-
-/*language switcher*/
-.language-switcher__language, .language-switcher__language:hover{
-	text-decoration: none;
-	color: $black;
-	display: inline;
-	margin-left: 5px;
-}
-
-.language-switcher__language:hover {
-	cursor: pointer;
-}
-
-.language-switcher {
-	position: absolute;
-	top: 20px;
-	right: 50px;
-	z-index: 9999;
-}

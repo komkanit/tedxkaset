@@ -1,0 +1,23 @@
+.navbar-collapse {
+	ul.nav {
+
+		li a, li.active a, li a:hover, li.active a:hover {
+			background-color: transparent;
+		}
+
+    @media (max-width: 767px) {
+      margin-left: 55%;
+			box-shadow: 0px 2px #ddd;
+			background: white;
+    }
+  }
+
+	.language-switcher {
+		text-align: right;
+		display: block;
+		position: absolute;
+		right: 18px;
+		margin-top: 18px;
+		margin-left: 55%;
+	}
+}
