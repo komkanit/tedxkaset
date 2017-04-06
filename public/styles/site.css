@@ -5854,7 +5854,7 @@ body {
   font-size: 1.2em; }
 
 .navbar-left {
-  margin-top: 20px;
+  margin-top: 30px;
   margin-left: 10%; }
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
@@ -5866,6 +5866,9 @@ body {
 
 .feature-img > img {
   width: 100%; }
+
+.container-fullwidth {
+  background-color: #FFF; }
 
 .navbar-nav > li > a, .navbar-brand {
   padding-top: 25px;
@@ -5893,11 +5896,11 @@ body {
   text-align: center; }
 
 .box h2, h3 {
-  line-height: 150%; }
+  line-height: 150%;
+  margin-bottom: 20px; }
 
 .box a {
   background-color: #e62b1e;
-  margin-top: 5px;
   padding: 10px 25px;
   border-radius: 10%;
   border: none;
@@ -5976,14 +5979,12 @@ div.speaker-info > div.social {
   margin-top: 50px;
   text-align: center; }
 
-@media (max-width: 1100px) {
+@media (max-width: 1038px) {
   .navbar-left {
-    margin-left: 0; } }
+    margin-left: 8%;
+    text-align: center; } }
 
 @media (max-width: 991px) {
-  .navbar-left {
-    text-align: center;
-    margin-left: 15%; }
   .box {
     float: none;
     display: block;
@@ -5995,6 +5996,27 @@ div.speaker-info > div.social {
     text-align: center; }
   div.speaker-info {
     text-align: center; } }
+
+/*language switcher*/
+.language-switcher__language, .language-switcher__language:hover {
+  text-decoration: none;
+  color: #333;
+  display: inline;
+  margin-left: 5px; }
+
+.language-switcher__language:hover {
+  cursor: pointer; }
+
+.language-switcher {
+  position: absolute;
+  top: 20px;
+  right: 50px;
+  z-index: 9999; }
+
+@media (max-width: 770px) {
+  .language-switcher {
+    right: 70px; }
+  }
 
 .language-switcher__language, .language-switcher__language:hover {
   text-decoration: none;
@@ -6022,7 +6044,7 @@ div.speaker-info > div.social {
   text-align: right;
   display: block;
   position: absolute;
-  right: 18px;
+  /*right: 18px;*/
   margin-left: 55%; }
 
 @media (max-width: 767px) {
