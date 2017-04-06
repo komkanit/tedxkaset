@@ -65,4 +65,5 @@
 				"ans": "There are 3 prices of TEDxKasetsartU event :<br>Donor ticket - 1000 Baht (Booking officially starts on 7th April. This ticket is recommended for a person who intends to support TEDxKasetsartU. The application for donor tickets is not required. )<br>For general person - 500 Baht (Booking officially starts on 14th April.)<br>For student - 300 Baht (Booking officially starts on 14th April.)<br>"
 			}
 		]
+	}
 }
