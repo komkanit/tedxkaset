@@ -5983,6 +5983,9 @@ div.speaker-info > div.social {
   margin-top: 50px;
   text-align: center; }
 
+a.redlink {
+  color: #E62B1E; }
+
 @media (max-width: 1038px) {
   div.ab-position {
     text-align: center; }

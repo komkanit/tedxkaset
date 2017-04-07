@@ -2,14 +2,14 @@ extends ../layouts/default
 
 mixin post(post)
 	.post(data-ks-editable=editable(user, { list: 'Post', id: post.id }))
-		h2: a(href='/news/post/' + post.slug)= post.title
+		h2: a(href='/news/post/' + post.slug).redlink= post.title
 		p.lead.text-muted Posted 
 			if post.publishedDate
 				| on #{post._.publishedDate.format('MMMM Do, YYYY')} 
 			if post.categories && post.categories.length
 				| in 
 				each cat, i in post.categories
-					a(href='/news/' + cat.key)= cat.name
+					a(href='/news/' + cat.key).redlink= cat.name
 					if i < post.categories.length - 1
 						| , 
 					else
