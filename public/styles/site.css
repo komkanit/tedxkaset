@@ -5854,7 +5854,7 @@ body {
   font-size: 1.2em; }
 
 .navbar-left {
-  margin-top: 20px;
+  margin-top: 30px;
   margin-left: 10%; }
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
@@ -5867,11 +5867,14 @@ body {
 .feature-img > img {
   width: 100%; }
 
+.container-fullwidth {
+  background-color: #FFF; }
+
 .navbar-nav > li > a, .navbar-brand {
   padding-top: 25px;
   padding-bottom: 0;
   height: 70px;
-  margin-right: 35px; }
+  margin-right: 70px; }
 
 .navbar-brand img {
   width: auto;
@@ -5893,19 +5896,23 @@ body {
   text-align: center; }
 
 .box h2, h3 {
-  line-height: 150%; }
+  line-height: 125%;
+  margin-bottom: 20px; }
+
+.faq > h4 {
+  margin-bottom: 10px;
+  margin-top: 25px;
+  font-weight: bold; }
 
 .box a {
+  display: inline-block;
+  margin-top: 15px;
   background-color: #e62b1e;
-  margin-top: 5px;
   padding: 10px 25px;
-  border-radius: 10%;
   border: none;
   color: #fff;
   font-size: 130%;
   text-decoration: none;
-  width: 400px;
-  height: 300px;
   text-align: center; }
 
 .section {
@@ -5976,14 +5983,23 @@ div.speaker-info > div.social {
   margin-top: 50px;
   text-align: center; }
 
+a.redlink {
+  color: #E62B1E; }
+
+@media (max-width: 1038px) {
+  div.ab-position {
+    text-align: center; }
+  div.ab-position-each {
+    display: inline-block;
+    margin-right: 20px;
+    text-align: center; } }
+
 @media (max-width: 1100px) {
   .navbar-left {
-    margin-left: 0; } }
+    margin-left: 8%;
+    text-align: center; } }
 
 @media (max-width: 991px) {
-  .navbar-left {
-    text-align: center;
-    margin-left: 15%; }
   .box {
     float: none;
     display: block;
@@ -5995,6 +6011,26 @@ div.speaker-info > div.social {
     text-align: center; }
   div.speaker-info {
     text-align: center; } }
+
+/*language switcher*/
+.language-switcher__language, .language-switcher__language:hover {
+  text-decoration: none;
+  color: #333;
+  display: inline;
+  margin-left: 5px; }
+
+.language-switcher__language:hover {
+  cursor: pointer; }
+
+.language-switcher {
+  position: absolute;
+  top: 20px;
+  right: 50px;
+  z-index: 9999; }
+
+@media (max-width: 767px) {
+  .container-fluid .navbar-collapse .language-switcher {
+    display: none; } }
 
 .language-switcher__language, .language-switcher__language:hover {
   text-decoration: none;
