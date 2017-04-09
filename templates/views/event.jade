@@ -1,17 +1,17 @@
 extends ../layouts/default
 block intro
-	- var data = [{slug:"whatistedx",header:"What is TEDx"}, {slug:"eventinfo",header:"Event info"}, {slug:"speakers",header:"Speakers"}]
+	- var data = __('event.content')
 	.container.page-menu
 		h1 EVENT
 		for x in data
 			a(href='#'+ x.slug): h2= x.header
 
 block content
-	- var data = [{slug:"whatistedx",header:__('event.what_is_tedx.header'),content:__('event.what_is_tedx.content')}, {slug:"eventinfo",header:"Event info",content:"info"}, {slug:"speakers",header: __('event.speakers'),content:""}]
+	- var data = __('event.content')
 	.container.page
 		for x in data
 			div(id=x.slug)
-				h3= x.header
+				h1= x.header
 				p!= x.content
 				if(x.slug === "speakers")
 					for speaker in speakers
