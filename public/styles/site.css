@@ -5,6 +5,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+@import url("https://fonts.googleapis.com/css?family=Kanit|Roboto");
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -5821,6 +5822,15 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
+html, body {
+  font-family: "Helvetica Neue", Roboto, Kanit, Helvetica, Arial, sans-serif; }
+
+h1, h2, h3, h4, h5, h6, .subhead {
+  font-family: "Helvetica Neue", Roboto, Kanit, Helvetica, Arial, sans-serif; }
+
+p {
+  font-family: "Helvetica Neue", Roboto, Helvetica, Arial, sans-serif; }
+
 #footer {
   background-color: #E62B1E;
   height: auto;
@@ -5849,8 +5859,8 @@ body {
 
 .nav > li > a {
   text-transform: uppercase;
-  font-weight: bold;
-  font-size: 1.2em; }
+  font-weight: 700;
+  font-size: 1.1em; }
 
 .navbar-left {
   margin-top: 30px;

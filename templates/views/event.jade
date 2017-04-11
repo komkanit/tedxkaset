@@ -12,7 +12,7 @@ block content
 		for x in data
 			div(id=x.slug)
 				h1= x.header
-				p!= x.content
+				p.subhead!= x.content
 				if(x.slug === "speakers")
 					for speaker in speakers
 						div.row.speakers

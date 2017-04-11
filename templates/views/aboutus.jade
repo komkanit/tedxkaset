@@ -20,7 +20,7 @@ block content
 							div.ab-position-each
 								img(src=x.pic)
 								p= x.name
-				p!= x.content
+				p.subhead!= x.content
 				if(x.slug === "faq")
 					for question in questions
 						.faq
