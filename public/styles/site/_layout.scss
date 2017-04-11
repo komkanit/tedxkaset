@@ -4,7 +4,7 @@ html,body {
 	font-family: "Helvetica Neue", Roboto, Kanit, Helvetica, Arial, sans-serif;
 }
 
-h1,h2,h3,h4,h5,h6,.subhead {
+h1,h2,h3,h4,h5,h6,.subhead,#faq__header {
 	font-family: "Helvetica Neue", Roboto, Kanit, Helvetica, Arial, sans-serif;
 }
 
@@ -106,11 +106,6 @@ body {
 .box > h2,h3{
 	line-height: 125%;
 	margin-bottom: 20px;
-}
-.faq > h4 {
-	margin-bottom:10px;
-	margin-top: 25px;
-	font-weight: bold;
 }
 
 .box > a {
@@ -225,6 +220,15 @@ a {
 
 .subhead {
 	font-size: 1.2em;
+}
+
+#faq__header {
+	font-weight: bold;
+	font-size: 1.45em;
+}
+
+#faq {
+	margin-top: 40px;
 }
 
 @media (max-width: 1038px) {

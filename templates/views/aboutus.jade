@@ -23,6 +23,6 @@ block content
 				p.subhead!= x.content
 				if(x.slug === "faq")
 					for question in questions
-						.faq
-							h4= question.ask
-							p!= question.ans
+						#faq
+							p#faq__header= question.ask
+							p.subhead!= question.ans

@@ -53,10 +53,6 @@
 				"ans": "The main topics were Technology, Entertainment and Design, but today covers almost all topics — from science to business to global issues. TED speakers could be anyone who have got good ideas and experiences, and also would like to spread their stories to inspire other people."
 			},
 			{
-				"ask": "Who are the speakers at the event ?",
-				"ans": "One of our goals is to allow priority for those who are open to consume in variety of talks regardless of their interest on a specific speaker. Therefore, we reveal speakers only when the event is close."
-			},
-			{
 				"ask": "Why do I need to apply to buy a ticket and how can I apply ?",
 				"ans": "There are limited seats available, and one of the essence of attending a TEDx event is the opportunity to explore cross-disciplinary topics. Therefore, it's the most importance for us to get to know you more via the answers you provided.<br>Booking starts on April 7, 2017. You can apply at <a href=\"https://www.eventpop.me/e/1690-tedx-kasetsartu\">Eventpop</a>."
 			},
