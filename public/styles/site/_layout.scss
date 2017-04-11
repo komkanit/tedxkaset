@@ -99,16 +99,20 @@ body {
 	font-weight: bold;
 }
 
-.box > a{
+.box > a {
 	display: inline-block;
 	margin-top:15px;
-	background-color: #e62b1e;
+	background-color: $red;
 	padding: 10px 25px;
 	border: none;
-	color: #fff;
+	color: #FFF;
 	font-size: 130%;
 	text-decoration: none;
 	text-align: center;
+	&:hover {
+		color: #FFF;
+		background-color: darken($red, 7)
+	}
 }
 
 .section {
@@ -135,23 +139,23 @@ body {
 	width: auto;
 }
 
-.page-menu > h1 {
-	flex-grow: 1;
-	color: $red;
-	font-weight: bold;
-}
-
-.page-menu > a {
-	flex-grow: 1;
-	text-decoration: none;
-	color: $black;
-}
-
 .page-menu {
 	display: flex;
 	align-items: flex-end;
 	margin-top: 10px;
 	border-bottom: 1px solid $black;
+
+	h1 {
+		flex-grow: 1;
+		color: $red;
+		font-weight: bold;
+	}
+
+	a,a:hover {
+	flex-grow: 1;
+	text-decoration: none;
+	color: $black;
+	}
 }
 
 .page > div {
@@ -198,8 +202,11 @@ div.speaker-info > div.social {
 	text-align: center;
 }
 
-a.redlink {
-	color: $red;
+a {
+	color: $link;
+	&:hover {
+		color: darken($link, 9)
+	}
 }
 
 .subhead {

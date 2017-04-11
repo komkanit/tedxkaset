@@ -5909,13 +5909,16 @@ body {
 .box > a {
   display: inline-block;
   margin-top: 15px;
-  background-color: #e62b1e;
+  background-color: #E62B1E;
   padding: 10px 25px;
   border: none;
-  color: #fff;
+  color: #FFF;
   font-size: 130%;
   text-decoration: none;
   text-align: center; }
+  .box > a:hover {
+    color: #FFF;
+    background-color: #ca2216; }
 
 .section {
   background-color: #444;
@@ -5937,21 +5940,19 @@ body {
   height: 100%;
   width: auto; }
 
-.page-menu > h1 {
-  flex-grow: 1;
-  color: #E62B1E;
-  font-weight: bold; }
-
-.page-menu > a {
-  flex-grow: 1;
-  text-decoration: none;
-  color: #333; }
-
 .page-menu {
   display: flex;
   align-items: flex-end;
   margin-top: 10px;
   border-bottom: 1px solid #333; }
+  .page-menu h1 {
+    flex-grow: 1;
+    color: #E62B1E;
+    font-weight: bold; }
+  .page-menu a, .page-menu a:hover {
+    flex-grow: 1;
+    text-decoration: none;
+    color: #333; }
 
 .page > div {
   margin-top: 50px;
@@ -5985,8 +5986,10 @@ div.speaker-info > div.social {
   margin-top: 50px;
   text-align: center; }
 
-a.redlink {
+a {
   color: #E62B1E; }
+  a:hover {
+    color: #c12115; }
 
 .subhead {
   font-size: 1.2em; }
