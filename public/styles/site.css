@@ -5884,17 +5884,20 @@ body {
   margin-bottom: 0;
   height: 100px; }
 
-.box {
-  float: left;
-  width: 450px;
-  height: 400px;
-  background-color: #edeae1;
-  color: #535352;
-  padding: 15px;
-  padding-top: 3%;
-  text-align: center; }
+.landing-feature {
+  background-image: url("/images/changefuturel.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
 
-.box h2, h3 {
+.box {
+  background-color: #CCC;
+  color: #535352;
+  padding: 50px 0px;
+  text-align: center;
+  margin: 30px 10px; }
+
+.box > h2, h3 {
   line-height: 125%;
   margin-bottom: 20px; }
 
@@ -5903,7 +5906,7 @@ body {
   margin-top: 25px;
   font-weight: bold; }
 
-.box a {
+.box > a {
   display: inline-block;
   margin-top: 15px;
   background-color: #e62b1e;
@@ -5915,9 +5918,9 @@ body {
   text-align: center; }
 
 .section {
-  padding: 30px 20px 30px 20px;
   background-color: #444;
-  text-align: center; }
+  overflow: auto;
+  display: flex; }
 
 .about {
   padding-top: 150px;
@@ -5999,10 +6002,6 @@ a.redlink {
     text-align: center; } }
 
 @media (max-width: 991px) {
-  .box {
-    float: none;
-    display: block;
-    margin: 0 auto; }
   div.row > div {
     padding-left: 30px;
     padding-right: 30px; }
