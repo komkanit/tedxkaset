@@ -58,7 +58,7 @@
 			},
 			{
 				"ask": "Why do I need to apply to buy a ticket and how can I apply ?",
-				"ans": "There are limited seats available, and one of the essence of attending a TEDx event is the opportunity to explore cross-disciplinary topics. Therefore, it's the most importance for us to get to know you more via the answers you provided.<br>sBooking starts on April 7, 2017. You can apply at [link]."
+				"ans": "There are limited seats available, and one of the essence of attending a TEDx event is the opportunity to explore cross-disciplinary topics. Therefore, it's the most importance for us to get to know you more via the answers you provided.<br>Booking starts on April 7, 2017. You can apply at <a href=\"https://www.eventpop.me/e/1690-tedx-kasetsartu\">Eventpop</a>."
 			},
 			{
 				"ask": "How much do tickets cost?",
