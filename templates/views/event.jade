@@ -22,7 +22,7 @@ block content
 								else
 									img.speakers(src="/images/unknown-speaker.jpg" alt="#{getField(speaker, 'name', locale)}")
 							div.col-xs-6.col-lg-5.speaker-info
-								h3.speaker-name= getField(speaker, 'name', locale)
+								.speaker-name!= getField(speaker, 'speakerName', locale)
 								.description!= getField(speaker, 'description', locale)
 								div.social
 									- var social = {facebook: getField(speaker, 'facebook_url', locale), twitter: getField(speaker, 'twitter_url', locale), linkedIn: getField(speaker, 'linkedIn_url', locale)}
