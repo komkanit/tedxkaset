@@ -6028,26 +6028,6 @@ a {
   div.speaker-info {
     text-align: center; } }
 
-/*language switcher*/
-.language-switcher__language, .language-switcher__language:hover {
-  text-decoration: none;
-  color: #333;
-  display: inline;
-  margin-left: 5px; }
-
-.language-switcher__language:hover {
-  cursor: pointer; }
-
-.language-switcher {
-  position: absolute;
-  top: 20px;
-  right: 50px;
-  z-index: 9999; }
-
-@media (max-width: 767px) {
-  .container-fluid .navbar-collapse .language-switcher {
-    display: none; } }
-
 .language-switcher__language, .language-switcher__language:hover {
   text-decoration: none;
   color: #333;
@@ -6075,7 +6055,8 @@ a {
   display: block;
   position: absolute;
   right: 18px;
-  margin-left: 55%; }
+  margin-left: 55%;
+  margin-top: 18px; }
 
 @media (max-width: 767px) {
   .navbar-brand {
