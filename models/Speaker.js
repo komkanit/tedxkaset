@@ -20,6 +20,7 @@ const Speaker = new keystone.List('Speaker', {
 Speaker.add(combineFields([
 	{ name: { type: String, required: true, initial: true } },
 	createLocaleField('description', { type: Types.Html, wysiwyg: true, height: 300 }, locales),
+	createLocaleField('speakerName', { type: Types.Html, wysiwyg: true, height: 100 }, locales),
 	{ image: { type: Types.CloudinaryImage } },
 	{ facebook_url: { type: Types.Url } },
 	{ twitter_url: { type: Types.Url } },
