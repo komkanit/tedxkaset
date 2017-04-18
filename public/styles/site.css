@@ -5,6 +5,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+@import url("https://fonts.googleapis.com/css?family=Kanit|Roboto");
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -5821,9 +5822,17 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
+html, body {
+  font-family: "Helvetica Neue", Roboto, Kanit, Helvetica, Arial, sans-serif; }
+
+h1, h2, h3, h4, h5, h6, .subhead, #faq__header {
+  font-family: "Helvetica Neue", Roboto, Kanit, Helvetica, Arial, sans-serif; }
+
+p {
+  font-family: "Helvetica Neue", Roboto, Helvetica, Arial, sans-serif; }
+
 #footer {
-  padding-top: 25px;
-  background-color: #e62b1e;
+  background-color: #E62B1E;
   height: auto;
   width: 100%;
   text-align: center; }
@@ -5850,8 +5859,8 @@ body {
 
 .nav > li > a {
   text-transform: uppercase;
-  font-weight: bold;
-  font-size: 1.2em; }
+  font-weight: 700;
+  font-size: 1.1em; }
 
 .navbar-left {
   margin-top: 30px;
@@ -5885,40 +5894,41 @@ body {
   margin-bottom: 0;
   height: 100px; }
 
-.box {
-  float: left;
-  width: 450px;
-  height: 400px;
-  background-color: #edeae1;
-  color: #535352;
-  padding: 15px;
-  padding-top: 3%;
-  text-align: center; }
+.landing-feature {
+  background-image: url("/images/changefuturel.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
 
-.box h2, h3 {
+.box {
+  background-color: #CCC;
+  color: #535352;
+  padding: 50px 0px;
+  text-align: center;
+  margin: 30px 10px; }
+
+.box > h2, h3 {
   line-height: 125%;
   margin-bottom: 20px; }
 
-.faq > h4 {
-  margin-bottom: 10px;
-  margin-top: 25px;
-  font-weight: bold; }
-
-.box a {
+.box > a {
   display: inline-block;
   margin-top: 15px;
-  background-color: #e62b1e;
+  background-color: #E62B1E;
   padding: 10px 25px;
   border: none;
-  color: #fff;
+  color: #FFF;
   font-size: 130%;
   text-decoration: none;
   text-align: center; }
+  .box > a:hover {
+    color: #FFF;
+    background-color: #ca2216; }
 
 .section {
-  padding: 30px 20px 30px 20px;
   background-color: #444;
-  text-align: center; }
+  overflow: auto;
+  display: flex; }
 
 .about {
   padding-top: 150px;
@@ -5935,21 +5945,19 @@ body {
   height: 100%;
   width: auto; }
 
-.page-menu > h1 {
-  flex-grow: 1;
-  color: #E62B1E;
-  font-weight: bold; }
-
-.page-menu > a {
-  flex-grow: 1;
-  text-decoration: none;
-  color: #333; }
-
 .page-menu {
   display: flex;
   align-items: flex-end;
   margin-top: 10px;
   border-bottom: 1px solid #333; }
+  .page-menu h1 {
+    flex-grow: 1;
+    color: #E62B1E;
+    font-weight: bold; }
+  .page-menu a, .page-menu a:hover {
+    flex-grow: 1;
+    text-decoration: none;
+    color: #333; }
 
 .page > div {
   margin-top: 50px;
@@ -5983,8 +5991,20 @@ div.speaker-info > div.social {
   margin-top: 50px;
   text-align: center; }
 
-a.redlink {
+a {
   color: #E62B1E; }
+  a:hover {
+    color: #c12115; }
+
+.subhead {
+  font-size: 1.2em; }
+
+#faq__header {
+  font-weight: bold;
+  font-size: 1.45em; }
+
+#faq {
+  margin-top: 40px; }
 
 @media (max-width: 1038px) {
   div.ab-position {
@@ -6000,10 +6020,6 @@ a.redlink {
     text-align: center; } }
 
 @media (max-width: 991px) {
-  .box {
-    float: none;
-    display: block;
-    margin: 0 auto; }
   div.row > div {
     padding-left: 30px;
     padding-right: 30px; }
