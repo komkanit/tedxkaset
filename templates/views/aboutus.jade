@@ -16,10 +16,12 @@ block content
 				h1= x.header
 				if(x.header == "Team")
 					div.ab-position
-						for x in positiondata
+						for people in team
 							div.ab-position-each
-								img(src=x.pic)
-								p= x.name
+								if getField(people, 'image.url')
+									img.team-image(src="#{getField(people, 'image.url')}" width="180")
+								p!= getField(people, 'Name', locale)
+								p!= getField(people, 'Position', locale)
 				p.subhead!= x.content
 				if(x.slug === "faq")
 					for question in questions
