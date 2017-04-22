@@ -1,6 +1,12 @@
 {
 	"index": {
-		"read_more": "index.read_more"
+		"read_more": "index.read_more",
+		"event_box": {
+			"header": "TEDxKasetsartU - วันที่ 7 พฤษภาคม 2560",
+			"slogan": "คว้าโอกาส สร้างการเปลี่ยนแปลง",
+			"content": " ",
+			"cta": "อ่านเพิ่มเติม"
+		}
 	},
 	"event": {
 		"content": {
