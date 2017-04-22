@@ -7,10 +7,9 @@ block content
 	.container-fullwidth.section
 		.col-md-4.col-sm-12.col-xs-12
 			.box
-				h2 <b>TEDxKasetsartU - 7th of May</b>
-				h3
-					p Take a Chance<br>	
-					p Make a Change<br>
-					p TEDxKasetsartU is all about taking a chance and changing the future.
-				a(href='/event')!=__('Read More')
+				h2 <b>#{__('index.event_box.header')}</b>
+				h3(style='text-transform: uppercase;')
+					!=__('index.event_box.slogan')
+				p(style='font-size: 1.2em;') !{__('index.event_box.content')}
+				a(href='/event')!=__('index.event_box.cta')
 		.landing-feature.col-md-8.hidden-sm.hidden-xs
