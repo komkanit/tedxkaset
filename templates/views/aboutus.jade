@@ -15,13 +15,19 @@ block content
 			div(id=x.slug)
 				h1= x.header
 				if(x.header == "Team")
-					div.ab-position
+					.ab-position
+						- var n = 0
 						for people in team
-							div.ab-position-each
+							.ab-position-each
 								if getField(people, 'image.url')
 									img.team-image(src="#{getField(people, 'image.url')}" width="180")
-								p!= getField(people, 'Name', locale)
+								button(type='button', data-toggle='modal', data-target='#team-' + n)
+									!{getField(people, 'Name', locale)}
 								p!= getField(people, 'Position', locale)
+								+modal('team-'+n,'team-'+n) 
+									!{getField(people, 'Name', locale)}
+								- n++
+
 				p.subhead!= x.content
 				if(x.slug === "faq")
 					for question in questions
