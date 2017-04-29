@@ -6,7 +6,7 @@ mixin modal(title,id)
 					button.close(type="button",data-dismiss="modal")
 						span(aria-hidden="true") &times;
 						span.sr-only Close
-					h4.modal-title(id=id+"Label")= title
+					h4.modal-title(id=id+"Label")!= title
 				.modal-body
 					block
 				.modal-footer
