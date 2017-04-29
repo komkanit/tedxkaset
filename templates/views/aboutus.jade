@@ -21,7 +21,7 @@ block content
 						for people in team
 							.team-each
 								div.tag(type='button', data-toggle='modal', data-target='#team-' + n)
-									!{getField(people, 'Name', locale)}
+									div!{getField(people, 'Name', locale)}
 								+team-modal(getField(people, 'Name', locale), 'team-'+n) 
 									div.position!= getField(people, 'Position', locale)
 									if getField(people, 'image.url')

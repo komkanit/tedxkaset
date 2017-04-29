@@ -6101,7 +6101,9 @@ a {
 .team-modal {
   text-align: center; }
   .team-modal .modal-dialog {
-    max-width: 450px; }
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto; }
     .team-modal .modal-dialog .modal-content {
       border-radius: 3px; }
     .team-modal .modal-dialog .modal-header {
