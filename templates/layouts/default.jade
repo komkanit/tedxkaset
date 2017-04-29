@@ -1,5 +1,6 @@
 include ../mixins/flash-messages
-
+- var HOMEPAGE = false;
+block variables
 doctype html
 html
 
@@ -15,6 +16,7 @@ html
 		//- Customise the stylesheet for your site by editing /public/styles/site.sass
 		link(href="/styles/site.css", rel="stylesheet")
 
+		script(src="/js/jquery/jquery-1.11.3.min.js")
 		//- This file provides the default styling for the KeystoneJS Content Editor
 		if user && user.canAccessKeystone
 			link(href="/keystone/styles/content/editor.min.css", rel="stylesheet")
@@ -64,9 +66,40 @@ html
 						//- 		li: a(href='/keystone/signout') Sign Out
 						//- 	else
 						//- 		li: a(href='/keystone/signin') Sign In
-		.feature-img
-			img(src='/images/cover.jpg')
 
+		if HOMEPAGE
+			div.slide
+				.feature-img
+					img(src='/images/changeattitude.jpg')
+					//- img(src='/images/changefuturel.jpg')
+					img(src='/images/changelifestyle.jpg')
+					img(src='/images/changelsocial.jpg')
+					img(src='/images/changethrougth1.jpg')
+					script.
+						var display_cover_num = 0;
+						var cover;
+						var cover_length;
+						$(document).ready(function() {
+							cover = $('div.slide img');
+							cover_length = cover.length;
+							for(var i = 1; i < cover_length; i++) {
+								cover.eq(i).css('display', 'none');
+							}
+							setInterval(function() {
+								cover.eq(display_cover_num).css('display', 'none');
+								display_cover_num = (display_cover_num + 1) % cover_length;
+								cover.eq(display_cover_num).fadeIn(600, function() {
+									$(this).css('display', 'block')
+								});
+							}, 5000);
+						});
+		else	
+			.feature-img
+				img(src='/images/cover.jpg')		
+			
+	
+	
+ 
 		//- BODY
 		#body
 
