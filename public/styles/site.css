@@ -6035,9 +6035,30 @@ a {
 .team-each {
   padding-right: 10px;
   padding-left: 10px; }
-  .team-each div p, .team-each div p > span {
+  .team-each .tag p, .team-each .tag p > span {
     font-size: 1em !important;
     cursor: pointer; }
+
+.team-modal {
+  text-align: center; }
+  .team-modal .modal-dialog {
+    max-width: 450px; }
+    .team-modal .modal-dialog .modal-content {
+      border-radius: 3px; }
+    .team-modal .modal-dialog .modal-header {
+      border-bottom: none; }
+    .team-modal .modal-dialog .modal-footer {
+      border-top: none; }
+    .team-modal .modal-dialog .modal-body .modal-title, .team-modal .modal-dialog .modal-body .modal-title > p, .team-modal .modal-dialog .modal-body .modal-title > p > span {
+      font-size: 25px !important;
+      font-family: "Helvetica Neue", Roboto, Kanit, Helvetica, Arial, sans-serif !important; }
+    .team-modal .modal-dialog .modal-body .position {
+      margin-top: -10px;
+      margin-bottom: 20px; }
+    .team-modal .modal-dialog .modal-body .position, .team-modal .modal-dialog .modal-body .position > p > span {
+      color: #777 !important;
+      font-family: "Helvetica Neue", Roboto, Kanit, Helvetica, Arial, sans-serif !important;
+      font-size: 16px !important; }
 
 .language-switcher__language, .language-switcher__language:hover {
   text-decoration: none;

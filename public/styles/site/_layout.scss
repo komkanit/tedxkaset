@@ -272,10 +272,42 @@ a {
 .team-each {
 	padding-right: 10px;
 	padding-left: 10px;
-	div {
+	.tag {
 		p, p>span {
 			font-size: 1em !important;
 			cursor: pointer;
+		}
+	}
+}
+
+.team-modal {
+	text-align: center;
+	.modal-dialog {
+		max-width: 450px;
+		.modal-content {
+			border-radius: 3px;
+		}
+		.modal-header {
+			border-bottom: none;
+		}
+		.modal-footer {
+			border-top: none;
+		}
+		.modal-body {
+			.modal-title, .modal-title > p, .modal-title > p > span {
+				font-size: 25px !important;
+				font-family: "Helvetica Neue", Roboto, Kanit, Helvetica, Arial, sans-serif !important;
+			}
+			.position {
+				margin-top: -10px;
+				margin-bottom: 20px;
+			}
+			.position, .position > p > span {
+				color: $dark-grey !important;
+				font-family: "Helvetica Neue", Roboto, Kanit, Helvetica, Arial, sans-serif !important;
+				font-size: 16px !important;
+			}
+
 		}
 	}
 }
