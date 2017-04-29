@@ -176,7 +176,7 @@ body {
 	color: $red;
 }
 
-.page > div > p {
+.page > div > p, .page > div > div {
 	padding-left: 30px;
 }
 
@@ -185,7 +185,7 @@ body {
 	text-align: center;
 }
 
-div.speakers {
+.speakers {
 	margin-top: 50px;
 
 	.speaker-img img {
@@ -194,7 +194,7 @@ div.speakers {
 	}
 }
 
-div.speakers h2 {
+.speakers h2 {
 	color: $red;
 }
 
@@ -202,11 +202,11 @@ img.speakers {
 	display: inline-block;
 }
 
-div.row > div {
+.row > div {
 	height: 320px;
 }
 
-div.speaker-info > div.social {
+.speaker-info > .social {
 	margin-top: 50px;
 	text-align: center;
 }
@@ -232,11 +232,11 @@ a {
 }
 
 @media (max-width: 1038px) {
-div.ab-position {
+.ab-position {
 	text-align: center;
 }
 
-div.ab-position-each {
+.ab-position-each {
 	display: inline-block;
 	margin-right: 20px;
 	text-align: center;
@@ -251,14 +251,14 @@ div.ab-position-each {
 }
 
 @media (max-width: 991px) {
-	div.row > div {
+	.row > div {
 		padding-left: 30px;
 		padding-right: 30px;
 	}
-	div.speaker-img {
+	.speaker-img {
 		text-align: center;
 	}
-	div.speaker-info {
+	.speaker-info {
 		text-align: center;
 	}
 
