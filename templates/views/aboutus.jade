@@ -14,15 +14,20 @@ block content
 		for x in data
 			div(id=x.slug)
 				h1= x.header
-				if(x.header == "Team")
-					div.ab-position
-						for people in team
-							div.ab-position-each
-								if getField(people, 'image.url')
-									img.team-image(src="#{getField(people, 'image.url')}" width="180")
-								p!= getField(people, 'Name', locale)
-								p!= getField(people, 'Position', locale)
 				p.subhead!= x.content
+				if(x.header == "Team")
+					.team
+						- var n = 0
+						for people in team
+							.team-each
+								div.tag(type='button', data-toggle='modal', data-target='#team-' + n)
+									div!{getField(people, 'Name', locale)}
+								+team-modal(getField(people, 'Name', locale), 'team-'+n) 
+									div.position!= getField(people, 'Position', locale)
+									if getField(people, 'image.url')
+										img.team-image(src="#{getField(people, 'image.url')}" width="180")
+								- n++
+
 				if(x.slug === "faq")
 					for question in questions
 						#faq
