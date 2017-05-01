@@ -1,5 +1,14 @@
 {
   "name": "tedxkasetsart",
+  "description": "Website for TEDxKasetsartU",
+  "keywords": ["keystone", "ted", "tedx"],
+  "author": "komkanit <kom.sujautra@gmail.com>",
+  "contributors": [
+    "Ville Vaarala <ville.l.vaarala@gmail.com> (https://github.com/vaaralav)"
+  ],
+  "license": "MIT",
+  "repository": "https://github.com/komcal/tedxkaset",
+  "bugs": "https://github.com/komcal/tedxkaset/issues",
   "version": "0.0.0",
   "private": true,
   "dependencies": {
