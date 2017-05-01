@@ -18,7 +18,7 @@ block content
 						div.row.speakers
 							div.col-xs-4.col-lg-3.speaker-img
 								if getField(speaker, 'image.secure_url')
-									img.speakers(src="#{getField(speaker, 'image.secure_url')}")
+									img.speakers(src="#{getField(speaker, 'image.secure_url')}" alt="#{getField(speaker, 'name', locale)}")
 								else
 									img.speakers(src="/images/unknown-speaker.jpg" alt="#{getField(speaker, 'name', locale)}")
 							div.col-xs-6.col-lg-5.speaker-info
@@ -28,10 +28,10 @@ block content
 									- var social = {facebook: getField(speaker, 'facebook_url', locale), twitter: getField(speaker, 'twitter_url', locale), linkedIn: getField(speaker, 'linkedIn_url', locale)}
 									if social.facebook
 										a.img-circle.facebook(href="#{social.facebook}")
-											img(src="/images/Facebook.png")
+											img(src="/images/Facebook.png" alt="#{getField(speaker, 'name', locale)} on Facebook")
 									if social.twitter
 										a.img-circle.twitter(href="#{social.twitter}")
-											img(src="/images/Twitter.png")
+											img(src="/images/Twitter.png" alt="#{getField(speaker, 'name', locale)} on Twitter")
 									if social.linkedIn
 										a.img-circle.in(href="#{social.linkedIn}")
-											img(src="/images/Linkedin.png")
+											img(src="/images/Linkedin.png" alt="#{getField(speaker, 'name', locale)} on LinkedIn")
