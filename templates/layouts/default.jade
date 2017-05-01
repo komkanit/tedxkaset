@@ -54,7 +54,7 @@ html
 							span.icon-bar
 							span.icon-bar
 						a.navbar-brand(href='/')
-							img(src='/images/TEDxKasetsartU_logo.png')
+							img(src='/images/TEDxKasetsartU_logo.png', alt='TEDxKasetsartU')
 					.collapse.navbar-collapse
 						include ../i18n/language-switcher
 						ul.nav.navbar-nav.navbar-left
@@ -72,11 +72,11 @@ html
 		if HOMEPAGE
 			div.slide
 				.feature-img
-					img(src='/images/changeattitude.jpg')
+					img(src='/images/changeattitude.jpg', alt='Change Your Attitude')
 					//- img(src='/images/changefuturel.jpg')
-					img(src='/images/changelifestyle.jpg')
-					img(src='/images/changelsocial.jpg')
-					img(src='/images/changethrougth1.jpg')
+					img(src='/images/changelifestyle.jpg', alt='Change Your Lifestyle')
+					img(src='/images/changelsocial.jpg', alt='Change Your Society')
+					img(src='/images/changethrougth1.jpg', alt='Change Your Thought')
 					script.
 						var display_cover_num = 0;
 						var cover;
@@ -97,7 +97,7 @@ html
 						});
 		else	
 			.feature-img
-				img(src='/images/cover.jpg')
+				img(src='/images/cover.jpg', alt='Take a Chance, Make a Change')
 		//- BODY
 		#body
 
@@ -123,11 +123,11 @@ html
 			//- You don't _have_ to include a link saying your site is powered by KeystoneJS, but we appreciate it!
 			.social
 				a.img-circle.facebook(href="https://web.facebook.com/TEDxKasetsartU/" target="_blank")
-					img(src="/images/Facebook.png")
+					img(src="/images/Facebook.png", alt="TEDxKasetsartU on Facebook")
 				a.img-circle.twitter(href="https://twitter.com/TEDxKasetsartU" target="_blank")
-					img(src="/images/Twitter.png")
+					img(src="/images/Twitter.png", alt="TEDxKasetsartU on Twitter")
 				a.img-circle.in(href="https://www.linkedin.com/company/tedxkasetsartu" target="_blank")
-					img(src="/images/Linkedin.png")
+					img(src="/images/Linkedin.png", alt="TEDxKasetsartU on LinkedIn")
 			.blackline
 
 		//- JAVASCRIPT
