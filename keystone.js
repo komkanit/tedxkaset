@@ -87,6 +87,9 @@ keystone.set('nav', {
 	users: 'users',
 });
 
+// Use HTTPS for Cloudinary images
+keystone.set('cloudinary secure', true);
+
 // Start Keystone to connect to your database and initialise the web server
 
 keystone.start();
