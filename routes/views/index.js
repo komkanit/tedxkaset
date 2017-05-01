@@ -8,6 +8,8 @@ exports = module.exports = function (req, res) {
 	// locals.section is used to set the currently selected
 	// item in the header navigation.
 	locals.section = 'home';
+	locals.titlePath = 'index.title';
+	locals.isHomePage = true;
 
 	// Render the view
 	view.render('index');

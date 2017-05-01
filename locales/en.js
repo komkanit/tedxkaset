@@ -6,7 +6,8 @@
 			"slogan": "Take a Chance<br/> Make a Change",
 			"content": "TEDxKasetsartU is all about taking a chance and changing the future.",
 			"cta": "Read More"
-		}
+		},
+		"title": "About TEDxKasetsartU"
 	},
 	"event": {
 		"content": {
@@ -25,7 +26,8 @@
 				"header": "Speakers",
 				"content": ""
 			}
-		}
+		},
+		"title": "Event"
 	},
 	"aboutus": {
 		"content": {
@@ -66,6 +68,7 @@
 				"ask": "How much do tickets cost?",
 				"ans": "There are 3 prices of TEDxKasetsartU event<br><br><b>Donor ticket</b> - 1000 Baht (Booking officially starts on 7th April. This ticket is recommended for a person who intends to support TEDxKasetsartU. The application for donor tickets is not required. )<br><b>For general person</b> - 500 Baht (Booking officially starts on 14th April.)<br><b>For student</b> - 300 Baht (Booking officially starts on 14th April.)<br>"
 			}
-		]
+		],
+		"title": "About Us"
 	}
 }

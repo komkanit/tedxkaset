@@ -2,7 +2,7 @@ extends ../layouts/default
 block intro
 	- var data = __('event.content')
 	.container.page-menu
-		h1 EVENT
+		h1= __(titlePath)
 		for x in data
 			a(href='#'+ x.slug): h2= x.header
 

@@ -5,6 +5,7 @@ exports = module.exports = function (req, res) {
 	var locals = res.locals;
 
 	locals.section = 'event';
+	locals.titlePath = 'event.title';
 
 
 	view.query('event', keystone.list('Event').model.find());

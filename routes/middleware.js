@@ -34,6 +34,7 @@ exports.initLocals = function (req, res, next) {
 	res.locals.locales = consts.locales;
 	res.locals.languageNames = consts.languageNames;
 	res.locals.getField = getField;
+	res.locals.isHomePage = false;
 	next();
 };
 
