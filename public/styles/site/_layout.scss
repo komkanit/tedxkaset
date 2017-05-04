@@ -176,10 +176,6 @@ body {
 	color: $red;
 }
 
-.page > div > p, .page > div > div {
-	padding-left: 30px;
-}
-
 //////////
 .about-tedx{
 	text-align: center;
@@ -188,9 +184,10 @@ body {
 .speaker {
 	padding: 30px 0;
 	overflow: hidden;
+	margin-right: -30px;
 	padding-right: 30px;
 }
-.speakers {
+.speakers-array {
 	.speaker-img img {
 		max-width: 100%;
 		-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
@@ -203,7 +200,7 @@ body {
 		transition: 0.6s;
 		&:hover{
 		  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-		    z-index: 999999999;
+		    z-index: 1000;
 		}
 		padding: 0;
 }
@@ -214,10 +211,6 @@ body {
 
 img.speakers {
 	display: inline-block;
-}
-
-.row > div {
-	height: 320px;
 }
 
 .speaker-info > .social {
@@ -262,18 +255,4 @@ a {
 			margin-left: 8%;
 			text-align: center;
 	}
-}
-
-@media (max-width: 991px) {
-	.row > div {
-		padding-left: 30px;
-		padding-right: 30px;
-	}
-	.speaker-img {
-		text-align: center;
-	}
-	.speaker-info {
-		text-align: center;
-	}
-
 }

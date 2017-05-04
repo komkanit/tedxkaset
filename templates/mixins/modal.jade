@@ -24,3 +24,11 @@ mixin team-modal(title,id)
 					.modal-title(id=id+"Label")!= title
 					block
 				.modal-footer
+
+mixin speaker-modal(title,id)
+	.modal.fade2.speaker-modal(id=id,tabindex="-1",role="dialog",aria-labelledby=id+"Label" aria-hidden="true")
+		.modal-dialog
+			.modal-content
+				.modal-body
+					//- h4.modal-title(id=id+"Label")!= title
+					block

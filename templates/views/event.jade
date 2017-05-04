@@ -15,13 +15,26 @@ block content
 				p.subhead!= x.content
 				if(x.slug === "speakers")
 					div.speaker
+						- var n = 0
 						for speaker in speakers
-							div.speakers.col-xs-12.col-sm-4
-								div.speaker-img
-									if getField(speaker, 'image.secure_url')
-										img.speakers(src="#{getField(speaker, 'image.secure_url')}" alt="#{getField(speaker, 'name', locale)}")
-									else
-										img.speakers(src="/images/unknown-speaker.jpg" alt="#{getField(speaker, 'name', locale)}")
+							.speaker-each
+								div.speakers-array.col-xs-12.col-sm-3(type='button', data-toggle='modal', data-target='#speaker-' + n)
+									div.speaker-img
+										if getField(speaker, 'image.secure_url')
+											img.speakers(src="#{getField(speaker, 'image.secure_url')}" alt="#{getField(speaker, 'name', locale)}")
+										else
+											img.speakers(src="/images/unknown-speaker.jpg" alt="#{getField(speaker, 'name', locale)}")
+								+speaker-modal(getField(speaker, 'speakerName', locale),'speaker-' + n)
+									.row
+										.col-sm-6.speaker-img__modal
+											if getField(speaker, 'image.secure_url')
+												img(src="#{getField(speaker, 'image.secure_url')}" alt="#{getField(speaker, 'name', locale)}")
+											else
+												img(src="/images/unknown-speaker.jpg" alt="#{getField(speaker, 'name', locale)}")
+										.col-sm-6
+											.speaker-name!= getField(speaker, 'speakerName', locale)
+											div.speaker-desc!=getField(speaker, 'description', locale)
+							- n++
 								//- div.col-xs-6.col-lg-5.speaker-info
 								//- 	.speaker-name!= getField(speaker, 'speakerName', locale)
 								//- 	.description!= getField(speaker, 'description', locale)
