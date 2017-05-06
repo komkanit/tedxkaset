@@ -5975,21 +5975,91 @@ body {
   margin-right: -30px;
   padding-right: 30px; }
 
-.speakers-array {
-  transition: 0.6s;
-  padding: 0; }
+@media (max-width: 768px) {
   .speakers-array .speaker-img img {
-    max-width: 100%;
-    -webkit-filter: grayscale(100%);
-    /* Safari 6.0 - 9.0 */
-    filter: grayscale(100%); }
-    .speakers-array .speaker-img img:hover {
-      -webkit-filter: none;
-      /* Safari 6.0 - 9.0 */
-      filter: none; }
-  .speakers-array:hover {
+    display: none; }
+  .speakers-array .speaker-modal {
+    display: none; }
+  .speakers-array .row-unpress {
+    margin-top: 5px;
+    display: inline-block;
+    background-color: #fff;
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
     z-index: 1000; }
+    .speakers-array .row-unpress .col-sm-6.speaker-img__modal {
+      margin-left: -15px;
+      width: 50%;
+      float: left; }
+  .row {
+    height: auto; }
+    .row .col-sm-6.speaker-img__modal {
+      width: 50%;
+      height: auto; }
+    .row .col-sm-6 {
+      float: left;
+      display: inline-block;
+      width: 50%; }
+      .row .col-sm-6 .speaker-name {
+        width: 100%; } }
+
+@media (max-width: 580px) {
+  .row {
+    height: auto; }
+    .row .col-sm-6.speaker-img__modal {
+      margin-left: 25%;
+      margin-top: 10px;
+      width: 50%; }
+    .row .col-sm-6 {
+      width: 100%;
+      display: block;
+      float: none; }
+      .row .col-sm-6 .speaker-name {
+        width: 100%;
+        text-align: center; } }
+
+@media (max-width: 490px) {
+  .speakers-array .row-unpress {
+    margin-top: 10px; }
+    .speakers-array .row-unpress .col-sm-6.speaker-img__modal {
+      width: 100%;
+      display: inline-block;
+      float: right; }
+      .speakers-array .row-unpress .col-sm-6.speaker-img__modal img {
+        margin-left: -5%;
+        width: 110%; }
+    .speakers-array .row-unpress .col-sm-6 {
+      width: 100%;
+      text-align: center; }
+  .row {
+    height: auto;
+    margin-top: -10px; }
+    .row .col-sm-6.speaker-img__modal img {
+      margin-left: -50%;
+      width: 200%; }
+    .row .col-sm-6 {
+      width: 100%;
+      text-align: center; } }
+
+@media (min-width: 768px) {
+  .speakers-array {
+    transition: 0.6s;
+    padding: 0; }
+    .speakers-array .speaker-img img {
+      max-width: 100%;
+      -webkit-filter: grayscale(100%);
+      /* Safari 6.0 - 9.0 */
+      filter: grayscale(100%); }
+      .speakers-array .speaker-img img:hover {
+        -webkit-filter: none;
+        /* Safari 6.0 - 9.0 */
+        filter: none; }
+    .speakers-array .row-unpress {
+      display: none; }
+    .speakers-array .row {
+      display: none; }
+    .speakers-array:hover {
+      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+      z-index: 1000; } }
 
 .speakers h2 {
   color: #E62B1E; }
