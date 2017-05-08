@@ -24,8 +24,8 @@ block content
 									div!{getField(people, 'Name', locale)}
 								+team-modal(getField(people, 'Name', locale), 'team-'+n) 
 									div.position!= getField(people, 'Position', locale)
-									if getField(people, 'image.url')
-										img.team-image(src="#{getField(people, 'image.url')}" width="180")
+									if getField(people, 'image.secure_url')
+										img.team-image(src="#{getField(people, 'image.secure_url')}" width="180" alt="#{getField(people, 'Name', locale)}")
 								- n++
 
 				if(x.slug === "faq")
