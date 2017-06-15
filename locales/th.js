@@ -1,6 +1,12 @@
 {
 	"index": {
-		"read_more": "index.read_more"
+		"read_more": "index.read_more",
+		"event_box": {
+			"header": "TEDxKasetsartU - วันที่ 7 พฤษภาคม 2560",
+			"slogan": "คว้าโอกาส สร้างการเปลี่ยนแปลง",
+			"content": " ",
+			"cta": "อ่านเพิ่มเติม"
+		}
 	},
 	"event": {
 		"content": {
@@ -23,11 +29,6 @@
 	},
 	"aboutus": {
 		"content": {
-			"team": {
-				"slug": "team",
-				"header": "Team",
-				"content": "คณะผู้จัดงานของ TEDxKasetsartU เป็นกลุ่มอาสาสมัครจากมหาวิทยาลัยเกษตรศาสตร์ ที่มีอุดมการณ์เดียวกันนั่นก็คือต้องการร่วมเป็นส่วนหนึ่งของการเปลี่ยนแปลงให้สังคมพัฒนาไปในทางที่ดีขึ้น"
-			},
 			"faq": {
 				"slug": "faq",
 				"header": "FAQ",
@@ -37,6 +38,11 @@
 				"slug": "contact_us",
 				"header": "Contact Us",
 				"content": "ติดต่อพวกเราได้ที่<br>Facebook : <a href=\"https://www.facebook.com/TEDxKasetsartU\">https://www.facebook.com/TEDxKasetsartU</a><br>Twitter : <a href=\"https://twitter.com/TEDxKasetsartU\">https://twitter.com/TEDxKasetsartU</a><br>Email : tedxkasetsartu@gmail.com"
+			},
+			"team": {
+				"slug": "team",
+				"header": "Team",
+				"content": "คณะผู้จัดงานของ TEDxKasetsartU เป็นกลุ่มอาสาสมัครจากมหาวิทยาลัยเกษตรศาสตร์ ที่มีอุดมการณ์เดียวกันนั่นก็คือต้องการร่วมเป็นส่วนหนึ่งของการเปลี่ยนแปลงให้สังคมพัฒนาไปในทางที่ดีขึ้น"
 			}
 		},
 		"question": [

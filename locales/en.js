@@ -1,6 +1,12 @@
 {
 	"index": {
-		"read_more": "Read more"
+		"read_more": "Read more",
+		"event_box": {
+			"header": "TEDxKasetsartU - 7th of May 2017",
+			"slogan": "Take a Chance<br/> Make a Change",
+			"content": "TEDxKasetsartU is all about taking a chance and changing the future.",
+			"cta": "Read More"
+		}
 	},
 	"event": {
 		"content": {
@@ -23,11 +29,6 @@
 	},
 	"aboutus": {
 		"content": {
-			"team": {
-				"slug": "team",
-				"header": "Team",
-				"content": "Our team is a group of young volunteers from Kasetsart University that wants to be a part of change in our society."
-			},
 			"faq": {
 				"slug": "faq",
 				"header": "FAQ",
@@ -37,6 +38,11 @@
 				"slug": "contact_us",
 				"header": "Contact Us",
 				"content": "Facebook : <a href=\"https://www.facebook.com/TEDxKasetsartU\">https://www.facebook.com/TEDxKasetsartU</a><br>Twitter : <a href=\"https://twitter.com/TEDxKasetsartU\">https://twitter.com/TEDxKasetsartU</a><br>Email : tedxkasetsartu@gmail.com<br>"
+			},
+			"team": {
+				"slug": "team",
+				"header": "Team",
+				"content": "Our team is a group of young volunteers from Kasetsart University that wants to be a part of change in our society."
 			}
 		},
 		"question": [
@@ -61,6 +67,5 @@
 				"ans": "There are 3 prices of TEDxKasetsartU event<br><br><b>Donor ticket</b> - 1000 Baht (Booking officially starts on 7th April. This ticket is recommended for a person who intends to support TEDxKasetsartU. The application for donor tickets is not required. )<br><b>For general person</b> - 500 Baht (Booking officially starts on 14th April.)<br><b>For student</b> - 300 Baht (Booking officially starts on 14th April.)<br>"
 			}
 		]
-	},
-	"Read More": "Read More"
+	}
 }

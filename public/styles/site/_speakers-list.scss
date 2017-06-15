@@ -1,22 +1,50 @@
-#speakers {
-	.speakers.row {
-    height: auto;
 
-		div[class^=col] {
-      height: auto;
 
-			h3 {
-				color: $red;
-				text-align: left;
+.speaker-img__modal img {
+	width: 100%;
+}
+
+
+.speaker-modal {
+	text-align: center;
+	.modal-dialog {
+		max-width: 800px;
+		width: 100%;
+	    margin-left: auto;
+	    margin-right: auto;
+		.modal-content {
+			border-radius: 0px;
+		}
+		.modal-body {
+			padding-top: 0px;
+			padding-bottom: 0px;
+			.speaker-img__modal {
+				padding: 0;
 			}
+		}
+	}
 
-			.img-circle {
-				height: 32px;
-			}
+	.speaker-name {
+		text-align: left;
+		border-bottom: 3px solid #BAA;
+		margin-bottom: 40px;
+	}
+	.speaker-desc {
+		margin-bottom: 100px;
+	}
+}
 
-			.description, .social {
-				text-align: left;
-			}
-    }
-  }
+
+@media (min-width: 768px) {
+	.modal-dialog {
+	    margin: 10% auto;
+	}
+}
+.fade2 {
+    opacity: 0;
+    transition: opacity .15s linear;
+}
+
+.fade2.in {
+    opacity: 1;
 }
