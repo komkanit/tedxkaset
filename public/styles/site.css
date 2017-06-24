@@ -6099,6 +6099,19 @@ a {
     margin-left: 8%;
     text-align: center; } }
 
+div.partners {
+  text-align: center; }
+
+div.partners h2 {
+  margin-bottom: 20px;
+  color: #E62B1E; }
+
+div.partners > .row {
+  margin-bottom: 60px; }
+
+img.partner.friend {
+  margin-right: 10px; }
+
 .language-switcher__language, .language-switcher__language:hover {
   text-decoration: none;
   color: #333;
