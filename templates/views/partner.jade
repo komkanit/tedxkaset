@@ -1,9 +1,26 @@
 extends ../layouts/default
 
 block intro
-	.container
-		h1= 'Partner'
+	.container(style="text-align: center;")
+		h1= 'Partners'
 
 block content
 	.container: .row
-		.col-md-9
+		.col-md-12
+			div.partners(style="padding-top: 50px;")
+				.row
+					h2 Patron
+					img.partner.patron(src="/images/eng-ku.png", alt="คณะวิศวกรรมศาสตร์ มหาวิทยาลัยเกษตรศาสตร์", style="width: 350px;")
+					img.partner.patron(src="/images/eng-alumni-ku.png", alt="สมาคมศิษย์เก่า คณะวิศวกรรมศาสตร์ มหาวิทยาลัยเกษตรศาสตร์", style="width: 350px;")
+				.row
+					h2 Platinum
+					img.partner.platinum(src="/images/logo-thai-elec.png", alt="การไฟฟ้าแห่งประเทศไทย", style="width: 300px;")
+				.row
+					h2 Gold
+					img.partner.gold(src="/images/tai-ping.png", alt="ไทปิง", style="width: 180px;")
+					img.partner.gold(src="/images/alumni-ku-background.png", alt="สมาคมศิษย์เก่า มหาวิทยาลัยเกษตรศาสตร์", style="width: 150px; margin-left: 20px;")
+				.row
+					h2  Friends of TEDxKasetsartU
+					img.partner.friend(src="/images/logo ISUZU.png", alt="ISUZU", style="width: 100px;")
+					img.partner.friend(src="/images/radio-ku.png", alt="วิทยุ มหาวิทยาลัยเกษตรศาสตร์", style="width: 80px; margin-left: 10px;")
+					img.partner.friend(src="/images/iup-ku.png", alt="วิทยุ มหาวิทยาลัยเกษตรศาสตร์", style="width: 200px;")
