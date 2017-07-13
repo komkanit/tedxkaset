@@ -1,5 +1,5 @@
 var keystone = require('keystone');
-const { createLocaleField, combineFields } = require('../utils.js');
+const { createField, combineFields } = require('keystone-translated-fields');
 
 const locales = require('../constants').locales;
 const Types = keystone.Field.Types;
@@ -22,7 +22,7 @@ Speaker.add(combineFields([
 	{ name: { type: String } },
 	{ desc: { type: Types.Html, wysiwyg: true, height: 300 } },
 	{ image: { type: Types.CloudinaryImage } },
-	createLocaleField('about', { type: String }, locales),
+	createField('about', { type: String }, locales),
 ]));
 
 Speaker.register();

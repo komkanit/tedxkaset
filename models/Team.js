@@ -1,5 +1,5 @@
 var keystone = require('keystone');
-const { createLocaleField, combineFields } = require('../utils.js');
+const { createField, combineFields } = require('keystone-translated-fields');
 const { locales } = require('../constants.js');
 
 const Types = keystone.Field.Types;
@@ -19,8 +19,8 @@ const Team = new keystone.List('Team', {
 
 Team.add(combineFields([
 	{ name: { type: String, required: true, initial: true } },
-	createLocaleField('Name', { type: Types.Html, wysiwyg: true, height: 50 }, locales),
-	createLocaleField('Position', { type: Types.Html, wysiwyg: true, height: 50 }, locales),
+	createField('Name', { type: Types.Html, wysiwyg: true, height: 50 }, locales),
+	createField('Position', { type: Types.Html, wysiwyg: true, height: 50 }, locales),
 	{ image: { type: Types.CloudinaryImage } },
 ]));
 
